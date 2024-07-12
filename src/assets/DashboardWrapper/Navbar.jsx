@@ -4,6 +4,21 @@ const Wrapper = styled.div`
   .inner {
     color: var(--clr-primary-5);
   }
+  .log-main {
+    display: flex;
+    align-items: end;
+  }
+  .tog {
+    display: none;
+  }
+  .tog2 {
+    display: flex;
+    align-items: end;
+  }
+  .logoMain {
+    display: none;
+  }
+
   .nav-logo {
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
@@ -79,7 +94,13 @@ const Wrapper = styled.div`
     .nav {
       background: var(--clr-primary-10);
     }
-
+    .tog2 {
+      display: flex;
+      align-items: end;
+    }
+    .logoMain {
+      display: block;
+    }
     /* .nav-links {
       display: grid;
       grid-template-columns: repeat(5, 1fr);

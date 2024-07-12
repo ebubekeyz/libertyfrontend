@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
+
 import Wrapper from '../assets/DashboardWrapper/Navbar';
 import { FaBarsStaggered, FaBell } from 'react-icons/fa6';
 import Sidebar from './Sidebar';
@@ -7,7 +7,18 @@ import { customFetch } from '../utils';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { FaTimes } from 'react-icons/fa';
-
+import logo from '../assets/log.png';
+//  <div className="log-main">
+//    <img
+//      src={logo}
+//      alt="logo"
+//      className="logo logoMain"
+//      style={{ width: '5rem' }}
+//    />
+//    <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
+//      LCU Bank Plc
+//    </h1>
+//  </div>;
 const Navbar = ({ onClick }) => {
   window.addEventListener('scroll', function () {
     const navbar = document.querySelector('#nav');
@@ -74,10 +85,25 @@ const Navbar = ({ onClick }) => {
         <div className="nav-center">
           {/* nav header  */}
           <div className="nav-header">
-            <div className="log-main">
-              <img src={logo} alt="logo" className="logo logoMain" />
+            <button className="nav-btn" id="nav-btn">
+              <FaBarsStaggered onClick={handleToggle} />
+            </button>
+
+            <div className="tog">
+              <button className="nav-btn" id="nav-btn">
+                <FaBarsStaggered onClick={handleToggle} />
+              </button>
+            </div>
+
+            <div className="tog2">
+              <img
+                src={logo}
+                alt="logo"
+                className="logo logoMain"
+                style={{ width: '5rem' }}
+              />
               <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
-                L C U Bank Plc
+                LCU Bank Plc
               </h1>
             </div>
           </div>

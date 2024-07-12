@@ -26,6 +26,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logoutUser } from '../features/user/userSlice';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
+import logo from '../assets/log.png';
 
 const Sidebar = ({ onClick, onClick2 }) => {
   const dispatch = useDispatch();
@@ -48,7 +49,12 @@ const Sidebar = ({ onClick, onClick2 }) => {
 
           <ul className="sidebar-links">
             <div className="sidebar-logo">
-              <img src="/logo.png" className="side-logo" alt="logo" />
+              {/* <img
+                src={logo}
+                alt="logo"
+                className="logo logoMain"
+                style={{ width: '5rem' }}
+              /> */}
             </div>
 
             <li>

@@ -28,7 +28,9 @@ const Wrapper = styled.aside`
   }
   .sidebar-links {
     text-align: center;
+    padding-top: 4.5rem;
   }
+
   .sidebar-logo {
     text-align: center;
     display: grid;
@@ -125,6 +127,7 @@ const Wrapper = styled.aside`
       bottom: 0;
       margin: 0 auto;
     }
+
     .power {
       text-align: left;
     }
