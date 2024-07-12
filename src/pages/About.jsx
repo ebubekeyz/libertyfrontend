@@ -123,13 +123,14 @@ const About = () => {
             <h3
               style={{ letterSpacing: '0rem', color: 'var(--clr-primary-6)' }}
             >
-              Welcome to Pledge Bank Plc, Your Financial Partner
+              Welcome to Liberty Credit-Union Bank Plc, Your Financial Partner
             </h3>
             <p>
-              At Pledge Bank, we are committed to providing exceptional banking
-              services tailored to meet the diverse needs of our customers. With
-              a rich history and a forward-looking approach, we strive to be
-              your trusted partner in financial growth and security.
+              At Liberty Credit-Union Bank, we are committed to providing
+              exceptional banking services tailored to meet the diverse needs of
+              our customers. With a rich history and a forward-looking approach,
+              we strive to be your trusted partner in financial growth and
+              security.
             </p>
 
             <h3
@@ -150,12 +151,12 @@ const About = () => {
               Our History
             </h3>
             <p>
-              Founded in 1980, Pledge Bank has grown from a small community bank
-              to a leading financial institution. Over the years, we have
-              expanded our services and footprint, always staying true to our
-              core values of integrity, trust, and customer-centricity. Our
-              journey is marked by a commitment to excellence and a passion for
-              helping our clients succeed.
+              Founded in 1980, Liberty Credit-Union Bank has grown from a small
+              community bank to a leading financial institution. Over the years,
+              we have expanded our services and footprint, always staying true
+              to our core values of integrity, trust, and customer-centricity.
+              Our journey is marked by a commitment to excellence and a passion
+              for helping our clients succeed.
             </p>
 
             <h3
@@ -241,7 +242,7 @@ const About = () => {
                 color: 'var(--clr-primary-6)',
               }}
             >
-              Why Choose Pledge Bank
+              Why Choose Liberty Credit-Union Bank
             </h3>
 
             <ul

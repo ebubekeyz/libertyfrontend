@@ -5,13 +5,13 @@ const Privacy = () => {
       style={{ marginTop: '4rem', textAlign: 'left' }}
     >
       <div className="">
-        <h2>Pledge Bank Privacy Policy</h2>
+        <h2>Liberty Credit-Union Bank Privacy Policy</h2>
         <p>
-          At Pledge Bank, we value your privacy and are committed to protecting
-          your personal information. This Privacy Policy explains how we
-          collect, use, disclose, and safeguard your information when you use
-          our services, including our website, mobile applications, and other
-          online services (collectively, the "Services").
+          At Liberty Credit-Union Bank, we value your privacy and are committed
+          to protecting your personal information. This Privacy Policy explains
+          how we collect, use, disclose, and safeguard your information when you
+          use our services, including our website, mobile applications, and
+          other online services (collectively, the "Services").
         </p>
       </div>
       <div>

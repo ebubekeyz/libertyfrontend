@@ -32,8 +32,8 @@ const Footer = () => {
         </ul>
 
         <p>
-          &copy; <span id="date">{footer}</span> pledge-bank.online. all rights
-          reserved
+          &copy; <span id="date">{footer}</span> libertycredit-union.com all
+          rights reserved
         </p>
       </footer>
     </Wrapper>

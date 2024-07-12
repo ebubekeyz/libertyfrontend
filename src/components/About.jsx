@@ -20,10 +20,11 @@ const About = () => {
             </div>
             {/* end of section title  */}
             <p>
-              At Pledge Bank, we are committed to providing exceptional banking
-              services tailored to meet the diverse needs of our customers. With
-              a rich history and a forward-looking approach, we strive to be
-              your trusted partner in financial growth and security.
+              At Liberty Credit-Union Bank, we are committed to providing
+              exceptional banking services tailored to meet the diverse needs of
+              our customers. With a rich history and a forward-looking approach,
+              we strive to be your trusted partner in financial growth and
+              security.
             </p>
             <p>
               Our mission is to empower individuals, families, and businesses to
