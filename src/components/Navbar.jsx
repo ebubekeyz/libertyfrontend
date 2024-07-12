@@ -59,7 +59,7 @@ const Navbar = () => {
             <div className="log-main">
               <img src={logo} alt="logo" className="logo logoMain" />
               <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
-                LCU Bank Plc
+                L C U Bank Plc
               </h1>
             </div>
             <button className="nav-btn" id="nav-btn">
