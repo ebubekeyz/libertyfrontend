@@ -53,16 +53,16 @@ const SiteMap = () => {
           </Link>
           <div className="jivo">
             <p>
-              <b>email:</b> team.pledge.bank@gmail.com
+              <b>email:</b> help.libertycreditunion@gmail.com
             </p>
             <p>
-              <b>Password:</b> pledgebank2024
+              <b>Password:</b> LibertyCredit2024
             </p>
           </div>
         </article>
 
         <article className="site-map">
-          <h4>Admin1 Login Details (has been changed)</h4>
+          <h4>Admin Login Details (has been changed)</h4>
           <Link to="/login" className="link">
             Admin Login
           </Link>
