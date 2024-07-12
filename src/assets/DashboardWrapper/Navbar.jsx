@@ -57,8 +57,8 @@ const Wrapper = styled.div`
     font-weight: 700;
   }
   .nav {
-    height: 5rem;
-    padding: 1rem;
+    height: 6rem;
+    padding: 0 1rem;
 
     display: grid;
     -webkit-box-align: center;

@@ -97,17 +97,11 @@ const Navbar = ({ onClick }) => {
 
             <div className="tog2">
               <img
-                src={logo}
+                src="/logo.png"
                 alt="logo"
                 className="logo logoMain"
-                style={{ width: '5rem' }}
+                style={{ width: '12rem' }}
               />
-              <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
-                <span>Liberty</span>{' '}
-                <span style={{ color: 'rgba(10, 95, 223, 0.8)' }}>
-                  Credit Union
-                </span>
-              </h1>
             </div>
           </div>
           {/* nav-links  */}

@@ -9,7 +9,7 @@ const Wrapper = styled.aside`
     width: 100%;
     height: 150%;
 
-    background: rgba(10, 95, 223, 0.8);
+    background: rgba(10, 95, 223, 1);
     z-index: 4;
     padding-top: 1.2rem;
     /* align-items: center;
@@ -28,6 +28,7 @@ const Wrapper = styled.aside`
   }
   .sidebar-links {
     text-align: center;
+    padding-top: 7rem;
   }
 
   .sidebar-logo {
@@ -115,7 +116,7 @@ const Wrapper = styled.aside`
   @media screen and (min-width: 1300px) {
     .sidebar {
       width: 21%;
-      background: rgba(10, 95, 223, 0.8);
+      background: rgba(10, 95, 223, 1);
       overflow-x: hidden;
       transform: translateX(0);
       place-items: start;
