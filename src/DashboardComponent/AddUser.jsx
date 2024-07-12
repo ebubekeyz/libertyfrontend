@@ -14,36 +14,6 @@ export const action =
     const formData = await request.formData();
     let data = Object.fromEntries(formData);
 
-    const formData2 = new FormData();
-
-    formData2.append('image', data.passport);
-
-    const response = await customFetch.post('/upload', formData2);
-
-    let passport = response.data.image.src;
-
-    data = {
-      ...data,
-      accountOwnership: data.accountOwnership,
-      address: data.address,
-      country: data.country,
-      dob: data.dob,
-      email: data.email,
-      firstName: data.firstName,
-      gender: data.gender,
-      idNumber: data.idNumber,
-      identity: data.identity,
-      lastName: data.lastName,
-      maritalStatus: data.maritalStatus,
-      occupation: data.occupation,
-      phone: data.phone,
-      typeOfAccount: data.typeOfAccount,
-      passport: response.data.image.src,
-      password: data.password,
-      role: data.role,
-    };
-
-    console.log(data);
     try {
       const resp = await customFetch.post(`/auth/local/register`, data);
       alert.innerHTML = `User Added Successfully`;
@@ -240,21 +210,6 @@ then close all select boxes: */
             </select>
           </div>
           <FormInput type="text" label="Occupation" name="occupation" />
-
-          <div className="upload">
-            {/* start */}
-
-            <div className="mb-6 pt-4">
-              <div className="formbold-mb-5 formbold-file-input">
-                <input type="file" name="passport" id="file" />
-              </div>
-            </div>
-
-            <div>
-              <button className="formbold-btn w-full">Upload Passport</button>
-            </div>
-            {/* end */}
-          </div>
 
           <SubmitBtn text="save" />
         </Form>
