@@ -5,12 +5,12 @@ const Terms = () => {
       style={{ margin: '2rem auto', textAlign: 'left' }}
     >
       <div className="">
-        <h3>Liberty Credit-Union Bank Terms and Conditions</h3>
+        <h3>Liberty Credit Union Terms and Conditions</h3>
         <p>
           These Terms and Conditions ("Terms") govern your use of the banking
-          services provided by Liberty Credit-Union Bank ("the Bank," "we,"
-          "us," "our"). By opening an account or using any of our services, you
-          agree to these Terms.
+          services provided by Liberty Credit Union ("the Bank," "we," "us,"
+          "our"). By opening an account or using any of our services, you agree
+          to these Terms.
         </p>
       </div>
 
