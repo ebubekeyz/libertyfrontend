@@ -91,6 +91,13 @@ const SiteMap = () => {
         </article>
 
         <article className="site-map">
+          <h4>Update User Passport</h4>
+          <Link to="/dashboard/changePhoto" className="link">
+            Update User Passport
+          </Link>
+        </article>
+
+        <article className="site-map">
           <h4>Change Password</h4>
           <Link to="/dashboard/security" className="link">
             Change Password
