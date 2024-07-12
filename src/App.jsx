@@ -36,6 +36,7 @@ import { loader as SetTransferDetailsLoader } from './DashboardPages/SetTransfer
 import { loader as TransactionLoader } from './DashboardPages/Transaction';
 import { loader as SingleServiceLoader } from './pages/SingleService';
 import { loader as LandingLoader } from './DashboardPages/Landing';
+import { loader as ChangePhotoLoader } from './DashboardPages/ChangePhoto';
 import { loader as SendMoneyLoader } from './DashboardPages/SendMoney';
 import { loader as AdminDepositLoader } from './DashboardPages/AdminDeposit';
 import { loader as DepositLoader } from './DashboardPages/Deposit';
@@ -94,6 +95,7 @@ import {
 } from './DashboardPages';
 
 import { action as RequestAction } from './pages/Request';
+import { action as ChangePhotoAction } from './DashboardComponent/ChangePhoto';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import {
@@ -112,6 +114,7 @@ import {
 import { loadWithdraw } from './features/user/userSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import ChangePhoto from './DashboardPages/ChangePhoto';
 
 const router = createBrowserRouter([
   {
@@ -312,6 +315,12 @@ const router = createBrowserRouter([
         path: '/dashboard/transaction',
         element: <Transaction />,
         loader: TransactionLoader(store),
+      },
+      {
+        path: '/dashboard/changePhoto',
+        element: <ChangePhoto />,
+        action: ChangePhotoAction(store),
+        loader: ChangePhotoLoader(store),
       },
       {
         path: '/dashboard/incoming-transaction',

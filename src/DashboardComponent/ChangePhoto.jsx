@@ -14,6 +14,20 @@ export const action =
     const formData = await request.formData();
     let data = Object.fromEntries(formData);
 
+    const formData2 = new FormData();
+
+    formData2.append('image', data.passport);
+
+    const response = await customFetch.post('/upload', formData2);
+
+    let passport = response.data.image.src;
+    console.log(passport);
+
+    data = {
+      ...data,
+      passport: response.data.image.src,
+    };
+
     try {
       const resp = await customFetch.patch(`/auth/${data.user2}`, data, {
         headers: {
@@ -45,7 +59,7 @@ export const action =
     return null;
   };
 
-const UpdateUsers = () => {
+const ChangePhoto = () => {
   const { allUsers, user } = useSelector((state) => state.userState);
   const select = () => {
     let x, i, j, l, ll, selElmnt, a, b, c;
@@ -164,70 +178,21 @@ then close all select boxes: */
               })}
             </select>
           </div>
-          <FormInput type="text" label="First Name" name="firstName" />
-          <FormInput type="text" label="Last Name" name="lastName" />
 
-          <FormInput type="email" name="email" label="Email" />
+          <div className="upload">
+            {/* start */}
 
-          <FormInput type="text" label="ID Number" name="idNumber" />
-          <FormInput type="text" label="Address" name="address" />
-          <FormInput type="date" label="Date Of Birth" name="dob" />
-          <FormInput type="text" label="Country" name="country" />
-          <FormInput type="text" label="Phone" name="phone" />
-          <FormInput type="text" label="Gender" name="gender" />
-          <div className="custom-select">
-            <select name="role" className="">
-              <option value="">Select Role</option>
-              <option value="admin">Admin</option>
-              <option value="owner">Owner</option>
-              <option value="user">user</option>
-            </select>
+            <div className="mb-6 pt-4">
+              <div className="formbold-mb-5 formbold-file-input">
+                <input type="file" name="passport" id="file" />
+              </div>
+            </div>
+
+            <div>
+              <button className="formbold-btn w-full">Upload Passport</button>
+            </div>
+            {/* end */}
           </div>
-          <div className="custom-select">
-            <select name="accountOwnership" className="">
-              <option value="">Select Account Ownership</option>
-              <option value="Individual">Individual</option>
-              <option value="Joint Account">Joint Account</option>
-              <option value="Trust Account">Trust Account</option>
-            </select>
-          </div>
-          <div className="custom-select">
-            <select name="maritalStatus" className="">
-              <option value="">Select Marital Status</option>
-              <option value="Single">Single</option>
-              <option value="Married">Married</option>
-              <option value="Divorced">Divorced</option>
-              <option value="Separated">Separated</option>
-              <option value="Widowed">Widowed</option>
-              <option value="Registered Partnership">
-                Registered Partnership
-              </option>
-            </select>
-          </div>
-          <div className="custom-select">
-            <select name="typeOfAccount" className="">
-              <option value="">Select</option>
-              <option value="Savings Account">Savings Account</option>
-              <option value="Checking Account">Checking Account</option>
-              <option value="Money Market Account">Money Market Account</option>
-              <option value="Certificate Of Deposit Account">
-                Certificate Of Deposit Account
-              </option>
-            </select>
-          </div>
-          <div className="custom-select">
-            <select name="identity">
-              <option value="">Select identity</option>
-              <option value="Social Security Number">
-                Social Security Number
-              </option>
-              <option value="Passport Number">Passport Number</option>
-              <option value="Driver's License Number">
-                Driver's License Number
-              </option>
-            </select>
-          </div>
-          <FormInput type="text" label="Occupation" name="occupation" />
 
           <SubmitBtn text="save" />
         </Form>
@@ -235,4 +200,4 @@ then close all select boxes: */
     </Wrapper>
   );
 };
-export default UpdateUsers;
+export default ChangePhoto;

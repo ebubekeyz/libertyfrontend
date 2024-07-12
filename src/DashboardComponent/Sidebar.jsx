@@ -157,6 +157,15 @@ const Sidebar = ({ onClick, onClick2 }) => {
             {user.role === 'admin' || user.role === 'owner' ? (
               <li>
                 <FaEdit className="service" />
+                <a href="/dashboard/changePhoto">Change Passport</a>
+              </li>
+            ) : (
+              ''
+            )}
+
+            {user.role === 'admin' || user.role === 'owner' ? (
+              <li>
+                <FaEdit className="service" />
                 <a href="/dashboard/updateUsers">Update User</a>
               </li>
             ) : (
