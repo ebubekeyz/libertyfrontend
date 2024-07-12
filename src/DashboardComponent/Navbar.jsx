@@ -118,7 +118,7 @@ const Navbar = ({ onClick }) => {
               />
               <sup className="num">{num}</sup>
             </Link>
-            {user.role === 'admin' || user.role === 'owner' ? (
+            {/* {user.role === 'admin' || user.role === 'owner' ? (
               <Link to="/dashboard/passport" className="passport">
                 <img
                   src={`${pass}${passport}`}
@@ -134,7 +134,7 @@ const Navbar = ({ onClick }) => {
                   className="pass"
                 />
               </div>
-            )}
+            )} */}
           </div>
         </div>
 

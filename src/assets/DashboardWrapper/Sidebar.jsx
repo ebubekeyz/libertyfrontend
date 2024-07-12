@@ -28,13 +28,24 @@ const Wrapper = styled.aside`
   }
   .sidebar-links {
     text-align: center;
-    padding-top: 7rem;
   }
 
   .sidebar-logo {
     text-align: center;
     display: grid;
     place-items: center;
+  }
+  .passport,
+  .pass {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 30rem;
+    object-fit: cover;
+  }
+  .pass-ico {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
   }
   .side-logo {
     width: 2rem;

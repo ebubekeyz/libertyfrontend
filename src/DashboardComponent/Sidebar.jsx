@@ -38,6 +38,14 @@ const Sidebar = ({ onClick, onClick2 }) => {
     navigate('/login');
     dispatch(logoutUser());
   };
+
+  const passport = useSelector((state) => state.userState.passport);
+
+  let pass =
+    process.env.NODE_ENV !== 'production'
+      ? 'http://localhost:7000'
+      : 'https://pledgebank.onrender.com';
+
   return (
     <Wrapper>
       <aside onClick={onClick2} className="sidebar" id="sidebar">
@@ -49,23 +57,24 @@ const Sidebar = ({ onClick, onClick2 }) => {
 
           <ul className="sidebar-links">
             <div className="sidebar-logo">
-              {/* <img
-                src="/logo.png"
-                alt="logo"
-                className="logo logoMain"
-                style={{ width: '12rem', marginBottom: '0.5rem' }}
-              /> */}
+              {user.role === 'admin' || user.role === 'owner' ? (
+                <a href="/dashboard/passport" className="passport">
+                  <img
+                    src={`${pass}${passport}`}
+                    alt="passport"
+                    className="pass"
+                  />
+                </a>
+              ) : (
+                <div className="passport">
+                  <img
+                    src={`${pass}${passport}`}
+                    alt="passport"
+                    className="pass"
+                  />
+                </div>
+              )}
             </div>
-
-            {/* <h1
-              style={{
-                fontSize: '1.2rem',
-
-                marginBottom: '4rem',
-              }}
-            >
-              {user.firstName} {user.lastName}
-            </h1> */}
 
             <li>
               <FaHome className="home" />
