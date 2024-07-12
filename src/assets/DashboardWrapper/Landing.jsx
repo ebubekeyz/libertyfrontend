@@ -65,7 +65,7 @@ const Wrapper = styled.div`
     gap: 1rem;
   }
   .ico {
-    color: var(--clr-primary-7);
+    color: yellow;
   }
   .inner-icon {
     flex: 0 0 calc(33.3% - 2rem);
