@@ -123,13 +123,13 @@ const About = () => {
             <h3
               style={{ letterSpacing: '0rem', color: 'var(--clr-primary-6)' }}
             >
-              Welcome to Liberty Credit-Union Bank Plc, Your Financial Partner
+              Welcome to Liberty Credit Union , Your Financial Partner
             </h3>
             <p>
-              At Liberty Credit-Union Bank, we are committed to providing
-              exceptional banking services tailored to meet the diverse needs of
-              our customers. With a rich history and a forward-looking approach,
-              we strive to be your trusted partner in financial growth and
+              At Liberty Credit Union, we are committed to providing exceptional
+              banking services tailored to meet the diverse needs of our
+              customers. With a rich history and a forward-looking approach, we
+              strive to be your trusted partner in financial growth and
               security.
             </p>
 
@@ -151,7 +151,7 @@ const About = () => {
               Our History
             </h3>
             <p>
-              Founded in 1980, Liberty Credit-Union Bank has grown from a small
+              Founded in 1980, Liberty Credit Union has grown from a small
               community bank to a leading financial institution. Over the years,
               we have expanded our services and footprint, always staying true
               to our core values of integrity, trust, and customer-centricity.
@@ -242,7 +242,7 @@ const About = () => {
                 color: 'var(--clr-primary-6)',
               }}
             >
-              Why Choose Liberty Credit-Union Bank
+              Why Choose Liberty Credit Union
             </h3>
 
             <ul
