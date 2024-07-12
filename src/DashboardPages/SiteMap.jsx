@@ -38,10 +38,10 @@ const SiteMap = () => {
           </Link>
           <div className="jivo">
             <p>
-              <b>email:</b> team.pledge.bank@gmail.com
+              <b>email:</b> help.libertycreditunion@gmail.com
             </p>
             <p>
-              <b>Password:</b> pledgebank2024
+              <b>Password:</b> LibertyCredit2024
             </p>
           </div>
         </article>
@@ -56,7 +56,7 @@ const SiteMap = () => {
               <b>email:</b> help.libertycreditunion@gmail.com
             </p>
             <p>
-              <b>Password:</b> LibertyCredit2024
+              <b>Password:</b> liberty2024
             </p>
           </div>
         </article>
@@ -68,10 +68,10 @@ const SiteMap = () => {
           </Link>
           <div className="jivo">
             <p>
-              <b>email:</b> oliveramora223@gmail.com
+              <b>email:</b> help.libertycreditunion@gmail.com
             </p>
             <p>
-              <b>Password:</b> secret
+              <b>Password:</b> liberty2024
             </p>
           </div>
         </article>
