@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   .skill p {
     margin-bottom: 0.5rem;
     text-transform: capitalize;
-    color: var(--clr-primary-1);
+    color: black;
   }
   .skill-container {
     background: var(--clr-white);

@@ -83,7 +83,7 @@ const Wrapper = styled.div`
       transition: var(--transition);
     }
     .nav-links .link:hover {
-      color: var(--clr-primary-5);
+      color: #000080;
     }
     .nav-center {
       display: grid;
