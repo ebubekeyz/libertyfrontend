@@ -15,13 +15,13 @@ const Wrapper = styled.div`
     display: flex;
     align-items: end;
   }
-  .logoMain {
+  /* .logoMain {
     display: none;
-  }
+  } */
 
   .nav-logo {
     font-size: 1.5rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
     text-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
   .passport,

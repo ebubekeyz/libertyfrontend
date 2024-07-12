@@ -57,9 +57,17 @@ const Navbar = () => {
           {/* nav header  */}
           <div className="nav-header">
             <div className="log-main">
-              <img src={logo} alt="logo" className="logo logoMain" />
+              <img
+                src={logo}
+                alt="logo"
+                className="logo logoMain"
+                style={{ width: '5rem' }}
+              />
               <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
-                L C U Bank Plc
+                <span>Liberty</span>{' '}
+                <span style={{ color: 'rgba(10, 95, 223, 0.8)' }}>
+                  Credit Union
+                </span>
               </h1>
             </div>
             <button className="nav-btn" id="nav-btn">

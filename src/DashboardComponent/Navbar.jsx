@@ -103,7 +103,10 @@ const Navbar = ({ onClick }) => {
                 style={{ width: '5rem' }}
               />
               <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
-                LCU Bank Plc
+                <span>Liberty</span>{' '}
+                <span style={{ color: 'rgba(10, 95, 223, 0.8)' }}>
+                  Credit Union
+                </span>
               </h1>
             </div>
           </div>

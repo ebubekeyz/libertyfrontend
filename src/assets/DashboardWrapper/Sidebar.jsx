@@ -9,9 +9,9 @@ const Wrapper = styled.aside`
     width: 100%;
     height: 150%;
 
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(10, 95, 223, 0.8);
     z-index: 4;
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
     /* align-items: center;
   justify-content: center; */
     place-items: center;
@@ -28,7 +28,6 @@ const Wrapper = styled.aside`
   }
   .sidebar-links {
     text-align: center;
-    padding-top: 4.5rem;
   }
 
   .sidebar-logo {
@@ -40,25 +39,25 @@ const Wrapper = styled.aside`
     width: 2rem;
     margin-bottom: 3.5rem;
   }
-  .nav-logo {
+  /* .nav-logo {
     font-size: 1rem;
-    letter-spacing: 0.5rem;
-    text-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.2rem;
+
     margin-bottom: 2rem;
     color: var(--clr-grey-5);
-  }
+  } */
   .sidebar-links a {
     font-size: 1.5rem;
     text-transform: capitalize;
     -webkit-transition: var(--transition);
     transition: var(--transition);
-    color: var(--clr-grey-8);
+    color: white;
     letter-spacing: var(--spacing);
     display: inline-block;
     margin-bottom: 1.5rem;
   }
   .sidebar-links a:hover {
-    color: var(--clr-primary-5);
+    color: var(--clr-grey-1);
   }
 
   .close-btn {
@@ -70,7 +69,7 @@ const Wrapper = styled.aside`
     border: transparent;
     -webkit-transition: var(--transition);
     transition: var(--transition);
-    color: #bb2525;
+    color: #e66b6b;
     cursor: pointer;
   }
   .close-btn:hover {
@@ -93,7 +92,7 @@ const Wrapper = styled.aside`
   .phone {
     font-size: 1rem;
     margin-right: 10px;
-    color: var(--clr-grey-5);
+    color: var(--clr-grey-3);
     transition: var(--transition);
   }
 
@@ -104,7 +103,7 @@ const Wrapper = styled.aside`
   .phone:hover,
   .power-btn:hover,
   .logout:hover {
-    color: var(--clr-primary-5);
+    color: var(--clr-primary-8);
   }
 
   .logout {
@@ -116,12 +115,12 @@ const Wrapper = styled.aside`
   @media screen and (min-width: 1300px) {
     .sidebar {
       width: 21%;
-      background: rgba(0, 0, 0, 0.95);
+      background: rgba(10, 95, 223, 0.8);
       overflow-x: hidden;
       transform: translateX(0);
       place-items: start;
       padding: 0rem 3rem;
-      padding-top: 2rem;
+      padding-top: 1rem;
       padding-bottom: 4rem;
       height: 330%;
       bottom: 0;
@@ -139,7 +138,7 @@ const Wrapper = styled.aside`
     }
     .sidebar-links a {
       font-size: 1rem;
-      color: var(--clr-grey-8);
+      color: white;
     }
     .sidebar-links li:hover {
       color: var(--clr-grey-10);

@@ -49,12 +49,19 @@ const Sidebar = ({ onClick, onClick2 }) => {
 
           <ul className="sidebar-links">
             <div className="sidebar-logo">
-              {/* <img
+              <img
                 src={logo}
                 alt="logo"
                 className="logo logoMain"
-                style={{ width: '5rem' }}
-              /> */}
+                style={{ width: '5rem', marginBottom: '0.5rem' }}
+              />
+              <h1
+                style={{ fontSize: '1rem', marginBottom: '2rem' }}
+                className="nav-logo"
+              >
+                <span>Liberty</span>{' '}
+                <span style={{ color: 'yellow' }}>Credit Union</span>
+              </h1>
             </div>
 
             <li>
