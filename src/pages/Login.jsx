@@ -138,7 +138,7 @@ const Login = () => {
         <Form method="post" className="form-control">
           <div className="arrow-control">
             <div className="logo">
-              <img src="/logo.png" alt="logo" className="logo-img" />
+              {/* <img src="/logo.png" alt="logo" className="logo-img" /> */}
               <h4>Sign in</h4>
               {/* <h1 className="">Pledge bank</h1> */}
 

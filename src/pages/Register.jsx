@@ -262,7 +262,7 @@ then close all select boxes: */
             <div className="form-alert" id="form-alert"></div>
             {/* <!-- btn container  */}
             <div className="logo">
-              <img src="/logo.png" alt="logo" className="logo-img" />
+              {/* <img src="/logo.png" alt="logo" className="logo-img" /> */}
               <h4>Create an Account</h4>
             </div>
             <div className="about-content">

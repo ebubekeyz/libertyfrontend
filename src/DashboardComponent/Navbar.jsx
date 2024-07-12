@@ -74,13 +74,12 @@ const Navbar = ({ onClick }) => {
         <div className="nav-center">
           {/* nav header  */}
           <div className="nav-header">
-            <button className="nav-btn" id="nav-btn">
-              <FaBarsStaggered onClick={handleToggle} />
-            </button>
-            <h1 className="nav-logo">
-              {/* <span className="pb">Pb</span> */}
-              Pledge <span className="inner">Bank</span>
-            </h1>
+            <div className="log-main">
+              <img src={logo} alt="logo" className="logo logoMain" />
+              <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
+                L C U Bank Plc
+              </h1>
+            </div>
           </div>
           {/* nav-links  */}
           <div className="pass-ico">
