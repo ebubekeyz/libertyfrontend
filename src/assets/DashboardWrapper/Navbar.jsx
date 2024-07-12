@@ -59,6 +59,7 @@ const Wrapper = styled.div`
   .nav {
     height: 5rem;
     padding: 1rem;
+
     display: grid;
     -webkit-box-align: center;
     align-items: center;

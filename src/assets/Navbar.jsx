@@ -29,8 +29,9 @@ const Wrapper = styled.div`
     text-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
   .nav {
-    height: 5rem;
-    padding: 1rem;
+    height: 6rem;
+    padding: 0 1rem;
+
     display: grid;
     -webkit-box-align: center;
     align-items: center;

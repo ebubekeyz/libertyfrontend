@@ -58,17 +58,17 @@ const Navbar = () => {
           <div className="nav-header">
             <div className="log-main">
               <img
-                src={logo}
+                src="/logo.png"
                 alt="logo"
                 className="logo logoMain"
-                style={{ width: '5rem' }}
+                style={{ width: '12rem' }}
               />
-              <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
+              {/* <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
                 <span>Liberty</span>{' '}
-                <span style={{ color: 'rgba(10, 95, 223, 0.8)' }}>
+                <span style={{ color: 'var(--clr-primary-3)' }}>
                   Credit Union
                 </span>
-              </h1>
+              </h1> */}
             </div>
             <button className="nav-btn" id="nav-btn">
               <FaBarsStaggered onClick={handleToggle} />
