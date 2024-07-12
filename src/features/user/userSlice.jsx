@@ -253,39 +253,37 @@ const userSlice = createSlice({
       }
     },
     calculateNotification: (state) => {
-      let user = JSON.parse(localStorage.getItem('user'));
-      if (user !== null) {
-        let notification = JSON.parse(localStorage.getItem('notification'));
-
-        // very important
-        if (notification !== null) {
-          const id = Object.values(notification)[0]._id;
-
-          const filter = Object.values(notification).filter(
-            (item) => item.status === 'pending'
-          );
-          state.num = filter.length;
-          state.notificationId = id;
-        } else {
-          state.notificationId = '';
-        }
-      }
+      // let user = JSON.parse(localStorage.getItem('user'));
+      // if (user !== null) {
+      //   let notification = JSON.parse(localStorage.getItem('notification'));
+      //   // very important
+      //   if (notification !== null) {
+      //     const id = Object.values(notification)[0]._id;
+      //     const filter = Object.values(notification).filter(
+      //       (item) => item.status === 'pending'
+      //     );
+      //     state.num = filter.length;
+      //     state.notificationId = id;
+      //   } else {
+      //     state.notificationId = '';
+      //   }
+      // }
     },
     calculateAllUsers: (state) => {
-      let user = JSON.parse(localStorage.getItem('user'));
-      if (user !== null) {
-        let allUsers = JSON.parse(localStorage.getItem('allUsers'));
-        if (allUsers !== null) {
-          const findImage = Object.values(allUsers).filter(
-            (item) => item._id === user._id
-          );
-          state.passport = findImage[0].passport;
-        } else {
-          state.filterUser = [];
-        }
-      } else {
-        state.passport = '';
-      }
+      // let user = JSON.parse(localStorage.getItem('user'));
+      // if (user !== null) {
+      //   let allUsers = JSON.parse(localStorage.getItem('allUsers'));
+      //   if (allUsers !== null) {
+      //     const findImage = Object.values(allUsers).filter(
+      //       (item) => item._id === user._id
+      //     );
+      //     state.passport = findImage[0].passport;
+      //   } else {
+      //     state.filterUser = [];
+      //   }
+      // } else {
+      //   state.passport = '';
+      // }
     },
     addAllUsers: (state, action) => {
       let user = JSON.parse(localStorage.getItem('user'));

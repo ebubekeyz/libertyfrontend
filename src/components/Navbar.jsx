@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
+import logo from '../assets/log.png';
 import Wrapper from '../assets/Navbar';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import Sidebar from './Sidebar';
@@ -56,10 +56,12 @@ const Navbar = () => {
         <div className="nav-center">
           {/* nav header  */}
           <div className="nav-header">
-            <h1 className="nav-logo">
-              {/* <span className="pb">Pb</span> */}
-              Pledge <span className="inner">Bank</span>
-            </h1>
+            <div className="log-main">
+              <img src={logo} alt="logo" className="logo logoMain" />
+              <h1 style={{ fontSize: '1.3rem' }} className="nav-logo">
+                LCU Bank Plc
+              </h1>
+            </div>
             <button className="nav-btn" id="nav-btn">
               <FaBarsStaggered onClick={handleToggle} />
             </button>

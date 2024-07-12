@@ -10,6 +10,13 @@ const Wrapper = styled.div`
     z-index: 2;
     box-shadow: var(--light-shadow);
   }
+  .log-main {
+    display: flex;
+    align-items: end;
+  }
+  .logoMain {
+    width: 5rem;
+  }
   .nav-links {
     display: none;
   }
@@ -18,7 +25,7 @@ const Wrapper = styled.div`
   }
   .nav-logo {
     font-size: 1.5rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
     text-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
   .nav {
