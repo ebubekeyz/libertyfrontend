@@ -26,7 +26,7 @@ const Cards = () => {
         <article className="card-main">
           <div className="header">
             <p>debit</p>
-            <img src="/logo.png" alt="logo" style={{ width: '2rem' }} />
+            <img src="/logo.png" alt="logo" style={{ width: '7rem' }} />
           </div>
 
           <div className="footer">

@@ -74,6 +74,10 @@ const Sidebar = ({ onClick, onClick2 }) => {
                   />
                 </div>
               )}
+
+              <h1 style={{ fontSize: '1rem', marginBottom: '1rem' }}>
+                {user.firstName} {user.lastName}
+              </h1>
             </div>
 
             <li>

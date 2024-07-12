@@ -11,7 +11,7 @@ const Wrapper = styled.aside`
 
     background: rgba(10, 95, 223, 1);
     z-index: 4;
-    padding-top: 1.2rem;
+    padding-top: 1rem;
     /* align-items: center;
   justify-content: center; */
     place-items: center;

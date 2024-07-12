@@ -39,7 +39,7 @@ export const action =
         const withdraw2 = resp.data.attributes;
         name.textContent = withdraw2.accountName;
         bank.textContent = withdraw2.bank;
-        amount.textContent = `USD ${format(withdraw2.amount)}`;
+        amount.textContent = `$ ${format(withdraw2.amount)}`;
         account.textContent = withdraw2.accountNumber;
 
         // console.log(withdraw2);
@@ -276,19 +276,14 @@ then close all select boxes: */
               justifyContent: 'center',
               alignItems: 'center',
 
-              background: 'var(--clr-primary-5)',
-              padding: '0.3rem 0',
+              padding: '0',
             }}
           >
             <img
               src="/logo.png"
-              style={{ width: '1rem', marginRight: '1rem' }}
+              style={{ width: '8rem', marginRight: '1rem' }}
               alt="logo"
             />
-            <h4>Pledge</h4>
-            <h4 className="nav-logo" style={{ color: 'var(--clr-primary-10)' }}>
-              Bank
-            </h4>
           </div>
 
           <div className="c-img">

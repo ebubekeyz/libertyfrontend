@@ -149,7 +149,7 @@ const Wrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
     border-radius: var(--radius);
     box-shadow: var(--light-shadow);
     display: none;
