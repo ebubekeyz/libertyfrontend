@@ -244,7 +244,7 @@ const Wrapper = styled.div`
   .transfer-btn {
     text-transform: uppercase;
     background: var(--clr-primary-5);
-    color: var(--clr-primary-1);
+    color: var(--clr-grey-1);
     padding: 0.375rem 0.75rem;
     letter-spacing: var(--spacing);
     display: inline-block;
