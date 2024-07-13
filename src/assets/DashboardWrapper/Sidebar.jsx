@@ -105,7 +105,7 @@ const Wrapper = styled.aside`
   .phone {
     font-size: 1rem;
     margin-right: 10px;
-    color: var(--clr-grey-3);
+    color: var(--clr-primary-7);
     transition: var(--transition);
   }
 

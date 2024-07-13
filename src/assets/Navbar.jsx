@@ -67,11 +67,11 @@ const Wrapper = styled.div`
     }
     .nav-links {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(7, 1fr);
       justify-items: center;
       -webkit-column-gap: 2rem;
       -moz-column-gap: 2rem;
-      column-gap: 2rem;
+      column-gap: 1rem;
       justify-self: end;
     }
     .nav-links .link {
