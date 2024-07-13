@@ -1,7 +1,7 @@
 import Wrapper from '../assets/Contact';
 
 const Contacts = () => {
-  document.title = `Contact`;
+  document.title = `Liberty Credit Union`;
   return (
     <Wrapper>
       <img

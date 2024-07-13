@@ -3,7 +3,7 @@ import { Carousel, Founders, MenuTab, Tab, Testimonies } from '../components';
 import Faqs from '../components/Faqs';
 
 const About = () => {
-  document.title = `About`;
+  document.title = `Liberty Credit Union`;
   return (
     <Wrapper>
       <img

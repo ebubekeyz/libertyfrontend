@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Services } from '../components';
 
 const Projects = () => {
-  document.title = `Projects`;
+  document.title = `Liberty Credit Union`;
   return (
     <>
       <img

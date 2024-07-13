@@ -13,7 +13,7 @@ import {
 } from '../components';
 
 const Landing = () => {
-  document.title = `Home`;
+  document.title = `Liberty Credit Union`;
 
   return (
     <>
