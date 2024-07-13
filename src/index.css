@@ -253,3 +253,35 @@ p {
     max-width: 950px;
   }
 }
+
+.loading-main {
+  background: rgba(225, 225, 225, 0.7);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.load {
+  animation: anim 2s linear infinite;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+    /* transform: scale(1); */
+  }
+  to {
+    opacity: 1;
+    /* transform: scale(0.5); */
+  }
+}

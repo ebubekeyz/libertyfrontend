@@ -1,13 +1,18 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigation } from 'react-router-dom';
 import { Footer, Navbar } from '../DashboardComponent';
 import { useSelector } from 'react-redux';
+import Loading from '../components/Loading';
 
 const HomeLayout = () => {
   const user = useSelector((state) => state.userState.user);
+  const navigation = useNavigation();
+  const isPageLoading = navigation.state === 'loading';
 
   return (
     <>
-      {user && (
+      {isPageLoading ? (
+        <Loading />
+      ) : (
         <div>
           <Navbar />
           <div className="section-center" id="dashboard">
