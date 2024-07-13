@@ -93,7 +93,7 @@ const Wrapper = styled.div`
     width: 100%;
     padding: 3.5rem 2rem;
     margin: 0 auto;
-    background: var(--clr-grey-1);
+    background: var(--clr-grey-2);
     transition: var(--transition);
   }
 
@@ -142,9 +142,9 @@ const Wrapper = styled.div`
       left: 50%;
       top: 50%;
 
-      max-width: 50rem;
+      max-width: 30rem;
       transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.5);
+      background: var(--clr-grey-2);
       border-radius: var(--radius);
       transition: var(--transition);
     }
@@ -168,7 +168,7 @@ const Wrapper = styled.div`
   }
 
   .select-selected {
-    background-color: var(--clr-grey-10);
+    background-color: var(--clr-primary-10);
     transition: var(--transition);
   }
 

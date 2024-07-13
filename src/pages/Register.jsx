@@ -3,7 +3,7 @@ import Wrapper from '../assets/Register';
 import { customFetch } from '../utils';
 import { loginUser } from '../features/user/userSlice';
 import { FaArrowCircleDown } from 'react-icons/fa';
-import FormInput from '../components/FormInput';
+import FormInput from '../components/FormInput2';
 import { FormSelect, SubmitBtn } from '../components';
 import { useEffect } from 'react';
 
@@ -262,7 +262,14 @@ then close all select boxes: */
             <div className="form-alert" id="form-alert"></div>
             {/* <!-- btn container  */}
             <div className="logo">
-              {/* <img src="/logo.png" alt="logo" className="logo-img" /> */}
+              <Link to="/">
+                <img
+                  src="/logo2.png"
+                  alt="logo"
+                  className="logo-img"
+                  style={{ width: '10rem' }}
+                />
+              </Link>
               <h4>Create an Account</h4>
             </div>
             <div className="about-content">

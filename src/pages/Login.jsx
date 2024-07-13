@@ -2,7 +2,7 @@ import { Form, Link, redirect, useNavigate } from 'react-router-dom';
 import Wrapper from '../assets/Login';
 import { customFetch } from '../utils';
 import { loginUser, logoutUser } from '../features/user/userSlice';
-import FormInput from '../components/FormInput';
+import FormInput from '../components/FormInput2';
 import { SubmitBtn } from '../components';
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
@@ -138,7 +138,14 @@ const Login = () => {
         <Form method="post" className="form-control">
           <div className="arrow-control">
             <div className="logo">
-              {/* <img src="/logo.png" alt="logo" className="logo-img" /> */}
+              <Link to="/">
+                <img
+                  src="/logo2.png"
+                  alt="logo"
+                  className="logo-img"
+                  style={{ width: '10rem' }}
+                />
+              </Link>
               <h4>Sign in</h4>
               {/* <h1 className="">Pledge bank</h1> */}
 

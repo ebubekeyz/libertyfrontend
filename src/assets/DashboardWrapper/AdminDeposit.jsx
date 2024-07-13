@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     text-transform: capitalize;
     font-size: 1rem;
     font-weight: 700;
-    color: var(--clr-grey-8);
+    color: var(--clr-grey-6);
   }
   .icon {
     color: var(--clr-primary-4);
@@ -74,7 +74,7 @@ const Wrapper = styled.div`
   }
 
   .select-selected {
-    background-color: var(--clr-grey-10);
+    background-color: var(--clr-primary-10);
     transition: var(--transition);
   }
 

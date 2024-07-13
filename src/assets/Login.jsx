@@ -47,7 +47,7 @@ const Wrapper = styled.section`
     width: 100%;
     padding: 3.5rem 2rem;
 
-    background: var(--clr-grey-1);
+    background: var(--clr-grey-2);
     transition: var(--transition);
     visibility: hidden;
   }
@@ -117,7 +117,7 @@ const Wrapper = styled.section`
       left: 50%;
       max-width: 30rem;
       transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.5);
+      background: var(--clr-grey-2);
       border-radius: var(--radius);
       transition: var(--transition);
     }

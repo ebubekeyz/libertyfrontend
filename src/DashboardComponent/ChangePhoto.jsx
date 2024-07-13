@@ -40,8 +40,8 @@ export const action =
         alert.innerHTML = '';
         alert.style.background = 'none';
       }, 3000);
-      window.location.reload();
-      return null;
+
+      return redirect('/dashboard/changePhoto');
     } catch (error) {
       const errorMessage = error.resp.data.msg || 'Error';
       alert.textContent = errorMessage;

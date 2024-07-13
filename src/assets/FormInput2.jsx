@@ -22,7 +22,7 @@ const Wrapper = styled.section`
     text-transform: capitalize;
     font-size: 1rem;
     font-weight: 700;
-    color: var(--clr-grey-4);
+    color: var(--clr-grey-8);
   }
 `;
 
