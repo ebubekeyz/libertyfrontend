@@ -260,8 +260,8 @@ const Wrapper = styled.div`
     text-align: center;
   }
   .transfer-btn:hover {
-    color: var(--clr-primary-1);
-    background: var(--clr-primary-7);
+    color: var(--clr-grey-10);
+    background: var(--clr-primary-5);
   }
   .showPopup {
     display: grid;
