@@ -34,6 +34,10 @@ const Sidebar = ({ onClick }) => {
             <li>
               <a href="/contacts">contact</a>
             </li>
+
+            <li>
+              <a href="/login">login</a>
+            </li>
           </ul>
         </div>
       </aside>

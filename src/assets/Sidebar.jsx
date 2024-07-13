@@ -7,7 +7,8 @@ const Wrapper = styled.aside`
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--clr-grey-10);
+    background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+      url('/hero-3.avif') center/cover no-repeat scroll;
     z-index: 4;
     display: grid;
     /* align-items: center;
@@ -32,13 +33,13 @@ const Wrapper = styled.aside`
     text-transform: capitalize;
     -webkit-transition: var(--transition);
     transition: var(--transition);
-    color: var(--clr-grey-5);
+    color: var(--clr-grey-9);
     letter-spacing: var(--spacing);
     display: inline-block;
     margin-bottom: 1.5rem;
   }
   .sidebar-links a:hover {
-    color: var(--clr-primary-5);
+    color: var(--clr-primary-8);
   }
   .social-icons {
     display: grid;
