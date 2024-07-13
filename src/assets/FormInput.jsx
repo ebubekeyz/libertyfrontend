@@ -13,7 +13,6 @@ const Wrapper = styled.section`
 
   .input:focus {
     outline: none;
-    background: none;
   }
 
   .input::placeholder {
