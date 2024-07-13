@@ -27,16 +27,20 @@ const Sidebar = ({ onClick }) => {
               <a href="/login">login</a>
             </li>
             <li>
-              <a href="/about">about</a>
+              <a href="/register">register</a>
             </li>
             <li>
               <a href="/services">services</a>
             </li>
             <li>
-              <a href="/faqs">Faqs</a>
+              <a href="/contacts">contact</a>
             </li>
             <li>
-              <a href="/contacts">contact</a>
+              <a href="/about">about Us</a>
+            </li>
+
+            <li>
+              <a href="/faqs">Faqs</a>
             </li>
           </ul>
         </div>
