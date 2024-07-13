@@ -22,6 +22,10 @@ const Sidebar = ({ onClick }) => {
             <li>
               <a href="/">home</a>
             </li>
+
+            <li>
+              <a href="/login">login</a>
+            </li>
             <li>
               <a href="/about">about</a>
             </li>
@@ -33,10 +37,6 @@ const Sidebar = ({ onClick }) => {
             </li>
             <li>
               <a href="/contacts">contact</a>
-            </li>
-
-            <li>
-              <a href="/login">login</a>
             </li>
           </ul>
         </div>
