@@ -27,11 +27,7 @@ const Wrapper = styled.div`
     align-items: start;
   }
   .transfer {
-    background: linear-gradient(
-      to right,
-      rgba(0, 100, 200, 0.5),
-      rgba(0, 100, 100, 0.5)
-    );
+    background: var(--clr-primary-5);
     padding: 2rem 2rem;
     overflow-x: hidden;
     border-radius: var(--radius);
@@ -49,7 +45,8 @@ const Wrapper = styled.div`
   }
 
   .transfer:hover {
-    transform: scale(1.02);
+    transform: skew(1.02deg);
+    border-radius: 0;
   }
   .amount,
   .name {
