@@ -2,7 +2,7 @@ import { Form, Link, redirect, useNavigate } from 'react-router-dom';
 import Wrapper from '../assets/DashboardWrapper/SendMoney';
 import { customFetch } from '../utils';
 import { loginUser } from '../features/user/userSlice';
-import Input from '../components/Input';
+import FormInput from '../components/FormInput';
 import { FormSelect, SubmitBtn } from '../components';
 import { FaArrowCircleDown, FaTimes } from 'react-icons/fa';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
@@ -210,7 +210,6 @@ then close all select boxes: */
 
         <Form method="post" className="form">
           <h4 className="title">Withdraw</h4>
-
           <div className="custom-select">
             <select name="user" className="">
               {Object.values(allUsers).map((item) => {
@@ -246,12 +245,12 @@ then close all select boxes: */
           <article className="to">
             <div>
               <h4></h4>
-              <Input
+              <FormInput
                 placeholder="Beneficiary Account Number"
                 name="accountNumber"
                 id="acc"
               />
-              <Input
+              <FormInput
                 name="accountName"
                 id="senderName"
                 placeholder="Account Name"
@@ -259,15 +258,11 @@ then close all select boxes: */
             </div>
           </article>
 
-          <span className="label" style={{ marginTop: '2rem' }}>
-            Select Account to withdraw From
-          </span>
+          <FormInput placeholder="12th June 2024" name="date1" />
+          <FormInput placeholder="11:57am, 12/06/2024" name="date2" />
+          <FormInput placeholder="Amount" name="amount" />
 
-          <Input placeholder="12th June 2024" name="date1" />
-          <Input placeholder="11:57am, 12/06/2024" name="date2" />
-          <Input placeholder="Amount" name="amount" />
-
-          <Input placeholder="Narration" name="Narration" />
+          <FormInput placeholder="Narration" name="narration" />
           <SubmitBtn text="Withdraw" />
         </Form>
       </div>

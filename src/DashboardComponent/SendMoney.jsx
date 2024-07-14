@@ -2,7 +2,7 @@ import { Form, Link, redirect, useNavigate } from 'react-router-dom';
 import Wrapper from '../assets/DashboardWrapper/SendMoney';
 import { customFetch } from '../utils';
 import { loginUser } from '../features/user/userSlice';
-import Input from '../components/Input';
+import FormInput from '../components/FormInput';
 import { FormSelect, SubmitBtn } from '../components';
 import { FaArrowCircleDown, FaTimes } from 'react-icons/fa';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
@@ -39,7 +39,7 @@ export const action =
         const withdraw2 = resp.data.attributes;
         name.textContent = withdraw2.accountName;
         bank.textContent = withdraw2.bank;
-        amount.textContent = `$ ${format(withdraw2.amount)}`;
+        amount.textContent = `USD ${format(withdraw2.amount)}`;
         account.textContent = withdraw2.accountNumber;
 
         // console.log(withdraw2);
@@ -276,14 +276,19 @@ then close all select boxes: */
               justifyContent: 'center',
               alignItems: 'center',
 
-              padding: '0',
+              background: 'var(--clr-primary-5)',
+              padding: '0.3rem 0',
             }}
           >
             <img
               src="/logo.png"
-              style={{ width: '8rem', marginRight: '1rem' }}
+              style={{ width: '1rem', marginRight: '1rem' }}
               alt="logo"
             />
+            <h4>Pledge</h4>
+            <h4 className="nav-logo" style={{ color: 'var(--clr-primary-10)' }}>
+              Bank
+            </h4>
           </div>
 
           <div className="c-img">
@@ -390,6 +395,9 @@ then close all select boxes: */
             </div>
           </article>
 
+          <span className="label" style={{ marginTop: '1rem' }}>
+            Bank
+          </span>
           <div className="custom-select">
             <select name="bank" id="ms" className="">
               <option value="Choose Bank">Choose Bank</option>
@@ -412,14 +420,15 @@ then close all select boxes: */
 
           <article className="to">
             <div>
-              <Input
+              <h4>Transfer To:</h4>
+              <FormInput
                 placeholder="Beneficiary Account Number"
                 name="accountNumber"
                 id="acc"
               />
 
               <div className="input-show" style={{ width: '100%' }}>
-                <Input
+                <FormInput
                   name="accountName"
                   id="senderName"
                   placeholder="Account Name"
@@ -454,8 +463,12 @@ then close all select boxes: */
 
           {user.role === 'admin' || user.role === 'owner' ? (
             <div className="">
-              <Input placeholder="12th June 2024" name="date1" label="Date1" />
-              <Input
+              <FormInput
+                placeholder="12th June 2024"
+                name="date1"
+                label="Date1"
+              />
+              <FormInput
                 placeholder="11:57am, 12/06/2024"
                 name="date2"
                 label="Date2"
@@ -481,15 +494,16 @@ then close all select boxes: */
           <input type="text" name="user" defaultValue={user._id} hidden />
           {show ? (
             <div>
-              <Input placeholder="Amount" name="amount" />
+              <FormInput placeholder="Amount" name="amount" />
 
-              <Input placeholder="Narration" name="narration" />
+              <FormInput placeholder="Narration" name="narration" />
 
               <div className="">
                 <span className="transfer-btn" onClick={openTransfer}>
                   Transfer
                 </span>
                 <div className="popup">
+                  <h4>Transfer Pin</h4>
                   <input
                     type="text"
                     className="input otp"
