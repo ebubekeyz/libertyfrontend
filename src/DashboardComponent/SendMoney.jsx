@@ -183,7 +183,7 @@ then close all select boxes: */
   const ok = () => {
     const alertImg = document.querySelector('.alert-img');
     alertImg.classList.remove('show2');
-    window.location.reload();
+    return window.location.reload();
   };
 
   const handleConfirm = () => {
