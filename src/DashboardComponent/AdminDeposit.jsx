@@ -143,8 +143,6 @@ const AdminDeposit = () => {
         <div className="form-alert"></div>
         <Form method="post">
           <h4 className="title">Deposit Money</h4>
-          <FormInput name="accountName" placeholder="Sender Name" type="text" />
-
           <div className="custom-select">
             <select name="user" id="ms" className="">
               {Object.values(allUsers).map((item) => {
@@ -157,6 +155,7 @@ const AdminDeposit = () => {
               })}
             </select>
           </div>
+          <FormInput name="accountName" placeholder="Sender Name" type="text" />
 
           <input
             type="text"

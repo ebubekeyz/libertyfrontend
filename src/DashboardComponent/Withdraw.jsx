@@ -212,6 +212,18 @@ then close all select boxes: */
           <h4 className="title">Withdraw</h4>
 
           <div className="custom-select">
+            <select name="user" className="">
+              {Object.values(allUsers).map((item) => {
+                const { _id, firstName, lastName } = item;
+                return (
+                  <option key={_id} value={_id}>
+                    {firstName} {lastName}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+          <div className="custom-select">
             <select name="bank" className="">
               <option value="Choose Bank">Choose Bank</option>
               <option value="Bank Of America">Bank Of America</option>
@@ -250,18 +262,6 @@ then close all select boxes: */
           <span className="label" style={{ marginTop: '2rem' }}>
             Select Account to withdraw From
           </span>
-          <div className="custom-select">
-            <select name="user" className="">
-              {Object.values(allUsers).map((item) => {
-                const { _id, firstName, lastName } = item;
-                return (
-                  <option key={_id} value={_id}>
-                    {firstName} {lastName}
-                  </option>
-                );
-              })}
-            </select>
-          </div>
 
           <Input placeholder="12th June 2024" name="date1" />
           <Input placeholder="11:57am, 12/06/2024" name="date2" />
