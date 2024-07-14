@@ -47,7 +47,6 @@ const Wrapper = styled.section`
     object-fit: cover;
     height: 100%;
   }
-
   .cont {
     position: absolute;
     top: 45%;
@@ -65,7 +64,7 @@ const Wrapper = styled.section`
     text-transform: capitalize;
     color: var(--clr-primary-10);
     font-family: var(--ff-primary);
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 700;
   }
   .text {

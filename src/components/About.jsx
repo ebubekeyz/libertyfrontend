@@ -9,7 +9,7 @@ const About = () => {
         <div className="section-center about-center">
           {/* about img  */}
           <article className="about-img">
-            <img src="/manager.avif" className="hero-photo" alt="about img" />
+            <img src="/man.jpg" className="hero-photo" alt="about img" />
           </article>
           {/* about info  */}
           <article className="about-info">
@@ -20,17 +20,15 @@ const About = () => {
             </div>
             {/* end of section title  */}
             <p>
-              At Liberty Credit-Union Bank, we are committed to providing
-              exceptional banking services tailored to meet the diverse needs of
-              our customers. With a rich history and a forward-looking approach,
-              we strive to be your trusted partner in financial growth and
-              security.
+              At Liberty Credit Union, we are committed to empowering our
+              customers with innovative financial solutions tailored to their
+              needs. We have built a legacy of trust and excellence, serving
+              individuals, families, and businesses in our community and beyond.
             </p>
             <p>
-              Our mission is to empower individuals, families, and businesses to
-              achieve their financial goals. We believe in delivering innovative
-              solutions, personalized service, and unparalleled convenience,
-              ensuring that your banking experience is seamless and rewarding.
+              Our mission is to provide accessible, reliable, and personalized
+              banking services that help our customers achieve their financial
+              goals while fostering economic growth in the communities we serve.
             </p>
             <Link to="/about" className="btn">
               about us

@@ -9,8 +9,12 @@ const Wrapper = styled.aside`
     width: 100%;
     height: 150%;
 
-    background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('/hero-3.avif') center/cover no-repeat scroll;
+    background: linear-gradient(
+        to left,
+        rgba(44, 174, 186, 0.5),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('/sidebar1.jpg') center/cover no-repeat scroll;
     z-index: 4;
     padding-top: 1rem;
     /* align-items: center;
@@ -60,7 +64,7 @@ const Wrapper = styled.aside`
     color: var(--clr-grey-5);
   } */
   .sidebar-links a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: capitalize;
     -webkit-transition: var(--transition);
     transition: var(--transition);
@@ -70,7 +74,7 @@ const Wrapper = styled.aside`
     margin-bottom: 1.5rem;
   }
   .sidebar-links a:hover {
-    color: var(--clr-grey-1);
+    color: var(--clr-grey-8);
   }
 
   .close-btn {
@@ -128,8 +132,12 @@ const Wrapper = styled.aside`
   @media screen and (min-width: 1300px) {
     .sidebar {
       width: 21%;
-      background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-        url('/hero-1.jpg') center/cover no-repeat scroll;
+      background: linear-gradient(
+          to left,
+          rgba(44, 174, 186, 0.5),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('/sidebar1.jpg') center/cover no-repeat scroll;
       overflow-x: hidden;
       transform: translateX(0);
       place-items: start;

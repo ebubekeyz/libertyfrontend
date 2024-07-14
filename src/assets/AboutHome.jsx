@@ -38,7 +38,7 @@ const Wrapper = styled.section`
       content: '';
       position: absolute;
       width: 100%;
-      height: 85%;
+      height: 75%;
       border: 0.25rem solid var(--clr-primary-5);
       top: 2rem;
       right: -2rem;

@@ -6,16 +6,16 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 const list = [
   {
     id: 1,
-    image: '/ceo1.jpeg',
-    name: 'Britney Olivia',
+    image: '/man.jpg',
+    name: 'James Smith',
     title: 'Co Founder & CEO',
     quote:
-      'Britney Olivia was an investment analyst at the international Finance Corporation and an investment associate at Zephyr Management LP in the US. She holds an MBS from Harvard Business School.',
+      'James Smith was an investment analyst at the international Finance Corporation and an investment associate at Zephyr Management LP in the US. She holds an MBS from Harvard Business School.',
   },
   {
     id: 2,
-    image: '/ceo2.jpg',
-    name: 'John A. Smith',
+    image: '/man2.jpg',
+    name: 'John A.',
     title: 'Manager',
     quote:
       'John’s career in banking spans over the years, during which he has accumulated extensive experience across various sectors of the financial industry. He began his career as a Financial Analyst, quickly rising through the ranks due to his keen analytical skills and strategic vision.',

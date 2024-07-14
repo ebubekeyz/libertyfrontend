@@ -126,11 +126,10 @@ const About = () => {
               Welcome to Liberty Credit Union , Your Financial Partner
             </h3>
             <p>
-              At Liberty Credit Union, we are committed to providing exceptional
-              banking services tailored to meet the diverse needs of our
-              customers. With a rich history and a forward-looking approach, we
-              strive to be your trusted partner in financial growth and
-              security.
+              At Liberty Credit Union, we are committed to empowering our
+              customers with innovative financial solutions tailored to their
+              needs. We have built a legacy of trust and excellence, serving
+              individuals, families, and businesses in our community and beyond.
             </p>
 
             <h3
@@ -139,30 +138,25 @@ const About = () => {
               Our Mission
             </h3>
             <p>
-              Our mission is to empower individuals, families, and businesses to
-              achieve their financial goals. We believe in delivering innovative
-              solutions, personalized service, and unparalleled convenience,
-              ensuring that your banking experience is seamless and rewarding.
+              Our mission is to provide accessible, reliable, and personalized
+              banking services that help our customers achieve their financial
+              goals while fostering economic growth in the communities we serve.
             </p>
-
             <h3
               style={{ letterSpacing: '0rem', color: 'var(--clr-primary-6)' }}
             >
-              Our History
+              Our Vision
             </h3>
             <p>
-              Founded in 1980, Liberty Credit Union has grown from a small
-              community bank to a leading financial institution. Over the years,
-              we have expanded our services and footprint, always staying true
-              to our core values of integrity, trust, and customer-centricity.
-              Our journey is marked by a commitment to excellence and a passion
-              for helping our clients succeed.
+              To be a leading financial institution recognized for our
+              customer-centric approach, innovative solutions, and unwavering
+              integrity.
             </p>
 
             <h3
               style={{ letterSpacing: '0rem', color: 'var(--clr-primary-6)' }}
             >
-              Our Values
+              Core Values
             </h3>
             <ul
               style={{
@@ -172,24 +166,22 @@ const About = () => {
               }}
             >
               <li>
-                <b>Integrity: </b>We conduct our business with the highest
-                ethical standards, earning the trust of our clients through
-                honesty and transparency.
+                <b>Integrity: </b>We conduct our business with honesty and
+                transparency, building trust in every relationship.
               </li>
               <li>
-                <b>Customer Focus:</b> Your needs are our priority. We listen,
-                understand, and deliver solutions that are designed specifically
-                for you.
+                <b>Customer Focus:</b> We prioritize our customers’ needs and
+                strive to exceed their expectations with every interaction.
               </li>
               <li>
-                <b>Innovation:</b> Embracing technology and innovation, we
-                continuously improve our services to provide you with
-                cutting-edge banking solutions.
+                <b>Innovation:</b>We embrace technology and innovation to offer
+                cutting-edge products and services that enhance our customers’
+                banking experience.
               </li>
               <li>
-                <b>Community Commitment:</b> We are dedicated to making a
-                positive impact in the communities we serve, supporting local
-                initiatives and fostering economic growth.
+                <b>Community Commitment:</b> We are dedicated to supporting
+                local initiatives and fostering economic development in the
+                communities we serve.
               </li>
             </ul>
 

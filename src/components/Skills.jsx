@@ -6,7 +6,7 @@ const Skills = () => {
       <section className="section skills">
         {/* section title  */}
         <div className="section-title">
-          <h2>Our Values</h2>
+          <h2>Core Values</h2>
           <div className="underline"></div>
         </div>
         {/* end of section title  */}

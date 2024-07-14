@@ -10,7 +10,7 @@ const list = [
     name: 'Emily R. - Personal Banking',
     title: 'office manager',
     quote:
-      'I have been a customer of Liberty Credit-Union Bank for over 10 years, and I could not be happier with the service. The staff is always friendly and ready to help. I especially appreciate the convenience of their mobile banking app, which makes managing my finances on the go so easy. Plus, the interest rates on their savings accounts are among the best I have found. Highly recommend!',
+      'I’ve been a customer of Liberty Credit Union for more than 10 years, and I could nOt be more satisfied with the service. The staff is consistently friendly and helpful. I particularly value the convenience of their mobile banking app, which makes it easy to manage my finances on the go. Additionally, their savings account interest rates are some of the best I’ve come across. I highly recommend them!',
   },
   {
     id: 2,
@@ -18,16 +18,16 @@ const list = [
     name: 'James T. - Business Banking',
     title: 'regular guy',
     quote:
-      'Liberty Credit-Union Bank has been an invaluable partner for my small business. Their business checking account is straightforward and hassle-free, and the cash management services have streamlined our operations significantly. Whenever I have needed assistance, their customer service team has been prompt and professional. Thanks to [Bank Name], managing our finances has never been easier.',
+      'Liberty Credit Union has been an essential partner for my small business. Their business checking account is simple and hassle-free, and the cash management services have greatly improved our operations. Whenever I’ve needed help, their customer service team has been quick and professional. Thanks to Liberty Credit Union, managing our finances has never been easier.',
   },
 
   {
     id: 3,
-    image: '/person2.png',
+    image: '/person2.webp',
     name: 'Micheal B. - Investment Services',
     title: 'the boss',
     quote:
-      'I decided to move my investment accounts to Liberty Credit-Union Bank after a friend recommended their wealth management services. It is been a great decision. My financial advisor took the time to understand my goals and risk tolerance, and we have seen consistent growth in my portfolio. I feel confident that my financial future is in good hands.',
+      'I chose to transfer my investment accounts to Liberty Credit Union Bank after a friend suggested their wealth management services. It has been a fantastic decision. My financial advisor took the time to understand my goals and risk tolerance, and my portfolio has shown consistent growth. I feel assured that my financial future is in capable hands.',
   },
 ];
 

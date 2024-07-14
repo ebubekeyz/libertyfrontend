@@ -15,8 +15,8 @@ const Timeline = () => {
           <article className="timeline-item">
             <h4>How Do I Open A New Account?</h4>
             <p>
-              You can open a new account online through our website, visit any
-              of our branches, or contact customer service for assistance.
+              You can open a new account online through our website, or contact
+              customer service for assistance.
             </p>
             <span className="number">1</span>
           </article>

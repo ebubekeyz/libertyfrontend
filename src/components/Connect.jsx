@@ -26,8 +26,8 @@ const Connect = () => {
           </div>
           {/* end of section title  */}
           <p className="video-text">
-            Our support team is always on hand to take your queries and offer
-            prompt resolutions to your tickets.
+            Our support team is always available to address your questions and
+            provide quick solutions to your tickets.
           </p>
           <Link to="/contacts" className="btn">
             contact us

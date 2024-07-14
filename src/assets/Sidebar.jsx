@@ -7,8 +7,12 @@ const Wrapper = styled.aside`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('/hero-3.avif') center/cover no-repeat scroll;
+    background: linear-gradient(
+        to left,
+        rgba(44, 174, 186, 0.5),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('/bank2.jpg') center/cover no-repeat scroll;
     z-index: 4;
     display: grid;
     /* align-items: center;
@@ -29,7 +33,7 @@ const Wrapper = styled.aside`
     text-align: center;
   }
   .sidebar-links a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     -webkit-transition: var(--transition);
     transition: var(--transition);
