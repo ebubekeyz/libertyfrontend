@@ -280,13 +280,13 @@ const Wrapper = styled.div`
   }
 
   .input::placeholder {
-    color: var(--clr-grey-7);
+    color: var(--clr-grey-6);
   }
   .label-text {
     text-transform: capitalize;
     font-size: 1rem;
     font-weight: 700;
-    color: var(--clr-grey-8);
+    color: var(--clr-grey-4);
   }
   @media screen and (min-width: 1300px) {
     .popup {

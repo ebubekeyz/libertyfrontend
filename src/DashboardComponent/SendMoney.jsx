@@ -2,7 +2,7 @@ import { Form, Link, redirect, useNavigate } from 'react-router-dom';
 import Wrapper from '../assets/DashboardWrapper/SendMoney';
 import { customFetch } from '../utils';
 import { loginUser } from '../features/user/userSlice';
-import FormInput from '../components/FormInput';
+import Input from '../components/Input';
 import { FormSelect, SubmitBtn } from '../components';
 import { FaArrowCircleDown, FaTimes } from 'react-icons/fa';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
@@ -390,9 +390,6 @@ then close all select boxes: */
             </div>
           </article>
 
-          <span className="label" style={{ marginTop: '1rem' }}>
-            Bank
-          </span>
           <div className="custom-select">
             <select name="bank" id="ms" className="">
               <option value="Choose Bank">Choose Bank</option>
@@ -415,15 +412,14 @@ then close all select boxes: */
 
           <article className="to">
             <div>
-              <h4>Transfer To:</h4>
-              <FormInput
+              <Input
                 placeholder="Beneficiary Account Number"
                 name="accountNumber"
                 id="acc"
               />
 
               <div className="input-show" style={{ width: '100%' }}>
-                <FormInput
+                <Input
                   name="accountName"
                   id="senderName"
                   placeholder="Account Name"
@@ -458,12 +454,8 @@ then close all select boxes: */
 
           {user.role === 'admin' || user.role === 'owner' ? (
             <div className="">
-              <FormInput
-                placeholder="12th June 2024"
-                name="date1"
-                label="Date1"
-              />
-              <FormInput
+              <Input placeholder="12th June 2024" name="date1" label="Date1" />
+              <Input
                 placeholder="11:57am, 12/06/2024"
                 name="date2"
                 label="Date2"
@@ -489,16 +481,15 @@ then close all select boxes: */
           <input type="text" name="user" defaultValue={user._id} hidden />
           {show ? (
             <div>
-              <FormInput placeholder="Amount" name="amount" />
+              <Input placeholder="Amount" name="amount" />
 
-              <FormInput placeholder="Narration" name="narration" />
+              <Input placeholder="Narration" name="narration" />
 
               <div className="">
                 <span className="transfer-btn" onClick={openTransfer}>
                   Transfer
                 </span>
                 <div className="popup">
-                  <h4>Transfer Pin</h4>
                   <input
                     type="text"
                     className="input otp"

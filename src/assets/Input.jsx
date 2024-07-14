@@ -16,7 +16,7 @@ const Wrapper = styled.section`
   }
 
   .input::placeholder {
-    color: var(--clr-grey-6);
+    color: var(--clr-grey-1);
   }
   .label-text {
     text-transform: capitalize;

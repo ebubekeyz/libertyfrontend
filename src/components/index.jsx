@@ -21,4 +21,5 @@ export { default as Founders } from './Founders';
 export { default as Faqs } from './Faqs';
 export { default as TextAreaInput } from './TextAreaInput';
 export { default as Loading } from './Loading';
+export { default as Input } from './Input';
 export { default as FormInput2 } from './FormInput2';

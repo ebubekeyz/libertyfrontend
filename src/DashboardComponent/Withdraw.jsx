@@ -2,7 +2,7 @@ import { Form, Link, redirect, useNavigate } from 'react-router-dom';
 import Wrapper from '../assets/DashboardWrapper/SendMoney';
 import { customFetch } from '../utils';
 import { loginUser } from '../features/user/userSlice';
-import FormInput from '../components/FormInput';
+import Input from '../components/Input';
 import { FormSelect, SubmitBtn } from '../components';
 import { FaArrowCircleDown, FaTimes } from 'react-icons/fa';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
@@ -211,7 +211,6 @@ then close all select boxes: */
         <Form method="post" className="form">
           <h4 className="title">Withdraw</h4>
 
-          <span className="label">Bank</span>
           <div className="custom-select">
             <select name="bank" className="">
               <option value="Choose Bank">Choose Bank</option>
@@ -235,17 +234,15 @@ then close all select boxes: */
           <article className="to">
             <div>
               <h4></h4>
-              <FormInput
+              <Input
                 placeholder="Beneficiary Account Number"
                 name="accountNumber"
                 id="acc"
-                label="Account Number"
               />
-              <FormInput
+              <Input
                 name="accountName"
                 id="senderName"
                 placeholder="Account Name"
-                label="Account Name"
               />
             </div>
           </article>
@@ -266,19 +263,11 @@ then close all select boxes: */
             </select>
           </div>
 
-          <FormInput placeholder="12th June 2024" name="date1" label="Date1" />
-          <FormInput
-            placeholder="11:57am, 12/06/2024"
-            name="date2"
-            label="Date2"
-          />
-          <FormInput placeholder="Amount" name="amount" label="Amount" />
+          <Input placeholder="12th June 2024" name="date1" />
+          <Input placeholder="11:57am, 12/06/2024" name="date2" />
+          <Input placeholder="Amount" name="amount" />
 
-          <FormInput
-            placeholder="Narration"
-            name="narration"
-            label="Narration"
-          />
+          <Input placeholder="Narration" name="Narration" />
           <SubmitBtn text="Withdraw" />
         </Form>
       </div>
