@@ -12,7 +12,11 @@ const Wrapper = styled.div`
     border-radius: var(--radius);
     box-shadow: var(--light-shadow);
     transition: var(--transition);
-    background: linear-gradient(to right, #a119, #d569);
+    background: linear-gradient(
+      to right,
+      var(--clr-grey-3),
+      var(--clr-primary-5)
+    );
     max-width: 37rem;
   }
   .header {

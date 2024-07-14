@@ -18,10 +18,11 @@ const Wrapper = styled.div`
     text-align: center;
     color: var(--clr-grey-9);
     background: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.8)
-    );
+        to left,
+        rgba(40, 200, 199, 0.9),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url('/bank4.jpg') center/cover no-repeat scroll;
 
     border-radius: var(--radius);
     padding: 3rem 0;
@@ -65,17 +66,13 @@ const Wrapper = styled.div`
     gap: 1rem;
   }
   .ico {
-    color: yellow;
+    color: var(--clr-grey-9);
   }
   .inner-icon {
     flex: 0 0 calc(33.3% - 2rem);
     padding-top: 1rem;
     border-radius: var(--radius);
-    background: linear-gradient(
-      to left,
-      rgba(0, 100, 200, 0.5),
-      rgba(0, 100, 100, 0.5)
-    );
+    background: var(--clr-primary-5);
     width: 20rem;
     height: 5rem;
     cursor: pointer;
