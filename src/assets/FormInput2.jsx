@@ -6,7 +6,7 @@ const Wrapper = styled.section`
     font-size: 1rem;
     padding: 0.8rem 0.5rem;
     border: none;
-    background: var(--clr-primary-10);
+    background: var(--clr-grey-10);
     margin: 0.8rem 0;
     border-radius: var(--radius);
   }

@@ -77,7 +77,7 @@ body::-webkit-scrollbar {
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: #e1e1e1;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;

@@ -50,7 +50,7 @@ const Wrapper = styled.div`
   }
 
   .select-selected {
-    background-color: var(--clr-primary-10);
+    background-color: var(--clr-grey-10);
     transition: var(--transition);
   }
 

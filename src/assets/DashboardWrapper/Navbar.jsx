@@ -49,7 +49,8 @@ const Wrapper = styled.div`
     }
   }
   .num {
-    background: var(--clr-primary-5);
+    background: var(--clr-primary-7);
+    color: black;
     text-align: center;
     border-radius: 10rem;
     padding: 0.2rem 0.4rem;
@@ -59,7 +60,7 @@ const Wrapper = styled.div`
   .nav {
     height: 6rem;
     padding: 0 1rem;
-
+    background: var(--clr-grey-10);
     display: grid;
     -webkit-box-align: center;
     align-items: center;
@@ -93,7 +94,7 @@ const Wrapper = styled.div`
   }
   @media screen and (min-width: 1300px) {
     .nav {
-      background: var(--clr-primary-10);
+      background: var(--clr-grey-10);
     }
     .tog2 {
       display: flex;
