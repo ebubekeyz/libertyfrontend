@@ -8,12 +8,38 @@ import { useEffect } from 'react';
 export const action =
   (store) =>
   async ({ request }) => {
-    const user = store.getState().userState.user;
+    const { user, allUsers } = store.getState().userState;
     const alert = document.querySelector('.form-alert');
 
     const formData = await request.formData();
     let data = Object.fromEntries(formData);
 
+    const filter = Object.values(allUsers).filter(
+      (item) => item._id === data.user2
+    );
+    localStorage.setItem('filter', JSON.stringify(filter));
+
+    console.log(data.firstName, data.lastName, data.occupation);
+
+    data = {
+      ...data,
+      accountOwnership: data.accountOwnership || filter[0].accountOwnership,
+      address: data.address || filter[0].address,
+      country: data.country || filter[0].country,
+      dob: data.dob || filter[0].dob,
+      email: data.email || filter[0].email,
+      firstName: data.firstName || filter[0].firstName,
+      gender: data.gender || filter[0].gender,
+      idNumber: data.idNumber || filter[0].idNumber,
+      identity: data.identity || filter[0].identity,
+      lastName: data.lastName || filter[0].lastName,
+      maritalStatus: data.maritalStatus || filter[0].maritalStatus,
+      occupation: data.occupation || filter[0].occupation,
+      phone: data.phone || filter[0].phone,
+      typeOfAccount: data.typeOfAccount || filter[0].typeOfAccount,
+      role: data.role || filter[0].role,
+    };
+    console.log(data);
     try {
       const resp = await customFetch.patch(`/auth/${data.user2}`, data, {
         headers: {
