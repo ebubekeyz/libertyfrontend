@@ -8,15 +8,11 @@ const Wrapper = styled.div`
   .card-main {
     display: grid;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem 2rem;
     border-radius: var(--radius);
     box-shadow: var(--light-shadow);
     transition: var(--transition);
-    background: linear-gradient(
-      to right,
-      var(--clr-grey-3),
-      var(--clr-primary-5)
-    );
+    background: linear-gradient(to right, var(--clr-grey-4), var(--white));
     max-width: 37rem;
   }
   .header {
@@ -60,6 +56,11 @@ const Wrapper = styled.div`
   .exp-date {
     display: flex;
     justify-content: space-between;
+  }
+  @media screen and (min-width: 1300px) {
+    .card-main {
+      padding: 2rem;
+    }
   }
 `;
 

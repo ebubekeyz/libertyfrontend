@@ -38,7 +38,6 @@ const AccountInfo = () => {
         </div>
 
         <article className="transfer">
-          <p className="date">Account Details</p>
           <div className="inner-transfer-cont">
             <div className="details">
               <p className="name">Name:</p>
