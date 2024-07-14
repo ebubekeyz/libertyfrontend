@@ -386,9 +386,6 @@ then close all select boxes: */
             </div>
           </article>
 
-          <span className="label" style={{ marginTop: '1rem' }}>
-            Bank
-          </span>
           <div className="custom-select">
             <select name="bank" id="ms" className="">
               <option value="Choose Bank">Choose Bank</option>
