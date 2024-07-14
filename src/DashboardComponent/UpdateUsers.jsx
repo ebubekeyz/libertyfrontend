@@ -39,7 +39,7 @@ export const action =
       typeOfAccount: data.typeOfAccount || filter[0].typeOfAccount,
       role: data.role || filter[0].role,
     };
-    console.log(data);
+
     try {
       const resp = await customFetch.patch(`/auth/${data.user2}`, data, {
         headers: {
