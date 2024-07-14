@@ -51,7 +51,6 @@ const Landing = () => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   };
 
-
   return (
     <Wrapper>
       <div className="landing">
@@ -86,8 +85,6 @@ const Landing = () => {
         </article>
 
         <article className="services">
-          <h4>Services</h4>
-
           <div className="icons">
             <Link to="/dashboard/sendMoney" className="inner-icon">
               <FaMoneyBill className="ico" />
