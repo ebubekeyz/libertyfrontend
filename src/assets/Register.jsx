@@ -93,7 +93,7 @@ const Wrapper = styled.div`
     width: 100%;
     padding: 3.5rem 2rem;
     margin: 0 auto;
-    background: var(--clr-grey-2);
+    background: rgba(0, 0, 0, 0.5);
     transition: var(--transition);
   }
 
@@ -144,7 +144,7 @@ const Wrapper = styled.div`
 
       max-width: 30rem;
       transform: translate(-50%, -50%);
-      background: var(--clr-grey-2);
+      background: rgba(0, 0, 0, 0.5);
       border-radius: var(--radius);
       transition: var(--transition);
     }
