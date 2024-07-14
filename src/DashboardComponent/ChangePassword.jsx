@@ -143,7 +143,6 @@ then close all select boxes: */
       <Form method="patch" className="account">
         <h4>Change User Password</h4>
 
-        <span className="label">Select User</span>
         <div className="custom-select">
           <select name="user2" id="ms" className="">
             {Object.values(allUsers).map((item) => {

@@ -150,8 +150,6 @@ then close all select boxes: */
         <div className="form-alert"></div>
         <h4>Update Users</h4>
         <Form method="patch" encType="multipart/form-data">
-          <h5>Select User</h5>
-
           <div className="custom-select">
             <select name="user2" id="ms" className="">
               {Object.values(allUsers).map((item) => {
@@ -164,17 +162,17 @@ then close all select boxes: */
               })}
             </select>
           </div>
-          <FormInput type="text" label="First Name" name="firstName" />
-          <FormInput type="text" label="Last Name" name="lastName" />
+          <FormInput type="text" placeholder="First Name" name="firstName" />
+          <FormInput type="text" placeholder="Last Name" name="lastName" />
 
-          <FormInput type="email" name="email" label="Email" />
+          <FormInput type="email" name="email" placeholder="Email" />
 
-          <FormInput type="text" label="ID Number" name="idNumber" />
-          <FormInput type="text" label="Address" name="address" />
-          <FormInput type="date" label="Date Of Birth" name="dob" />
-          <FormInput type="text" label="Country" name="country" />
-          <FormInput type="text" label="Phone" name="phone" />
-          <FormInput type="text" label="Gender" name="gender" />
+          <FormInput type="text" placeholder="ID Number" name="idNumber" />
+          <FormInput type="text" placeholder="Address" name="address" />
+          <FormInput type="date" placeholder="Date of Birth" name="dob" />
+          <FormInput type="text" placeholder="Country" name="country" />
+          <FormInput type="text" placeholder="Phone" name="phone" />
+          <FormInput type="text" placeholder="Gender" name="gender" />
           <div className="custom-select">
             <select name="role" className="">
               <option value="">Select Role</option>
@@ -227,7 +225,7 @@ then close all select boxes: */
               </option>
             </select>
           </div>
-          <FormInput type="text" label="Occupation" name="occupation" />
+          <FormInput type="text" placeholder="Occupation" name="occupation" />
 
           <SubmitBtn text="save" />
         </Form>

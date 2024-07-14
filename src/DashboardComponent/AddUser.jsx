@@ -146,17 +146,17 @@ then close all select boxes: */
         <div className="form-alert"></div>
         <h4>Add User</h4>
         <Form method="post" encType="multipart/form-data">
-          <FormInput type="text" label="First Name" name="firstName" />
-          <FormInput type="text" label="Last Name" name="lastName" />
+          <FormInput type="text" placeholder="First Name" name="firstName" />
+          <FormInput type="text" placeholder="Last Name" name="lastName" />
 
-          <FormInput type="email" name="email" label="Email" />
-          <FormInput type="text" name="password" label="Password" />
-          <FormInput type="text" label="ID Number" name="idNumber" />
-          <FormInput type="text" label="Address" name="address" />
-          <FormInput type="date" label="Date Of Birth" name="dob" />
-          <FormInput type="text" label="Country" name="country" />
-          <FormInput type="text" label="Phone" name="phone" />
-          <FormInput type="text" label="Gender" name="gender" />
+          <FormInput type="email" name="email" placeholder="Email" />
+          <FormInput type="text" name="password" placeholder="Password" />
+          <FormInput type="text" placeholder="ID Number" name="idNumber" />
+          <FormInput type="text" placeholder="Address" name="address" />
+          <FormInput type="date" placeholder="Date of Birth" name="dob" />
+          <FormInput type="text" placeholder="Country" name="country" />
+          <FormInput type="text" placeholder="Phone" name="phone" />
+          <FormInput type="text" placeholder="Gender" name="gender" />
           <div className="custom-select">
             <select name="role" className="">
               <option value="">Select Role</option>
@@ -209,7 +209,7 @@ then close all select boxes: */
               </option>
             </select>
           </div>
-          <FormInput type="text" label="Occupation" name="occupation" />
+          <FormInput type="text" placeholder="Occupation" name="occupation" />
 
           <SubmitBtn text="save" />
         </Form>

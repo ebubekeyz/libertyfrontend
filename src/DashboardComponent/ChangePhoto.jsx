@@ -165,8 +165,6 @@ then close all select boxes: */
         <div className="form-alert"></div>
         <h4>Update Users</h4>
         <Form method="patch" encType="multipart/form-data">
-          <h5>Select User</h5>
-
           <div className="custom-select">
             <select name="user2" id="ms" className="">
               {Object.values(allUsers).map((item) => {
