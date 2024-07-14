@@ -4,7 +4,7 @@ const Wrapper = styled.section`
   .login-section {
     height: 100vh;
     background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('/bank.avif') center/cover no-repeat;
+      url('/sidebar2.webp') center/cover no-repeat;
   }
 
   .logo-img {
@@ -47,7 +47,7 @@ const Wrapper = styled.section`
     width: 100%;
     padding: 3.5rem 2rem;
 
-    background: var(--clr-grey-2);
+    background: rgba(0, 0, 0, 0.5);
     transition: var(--transition);
     visibility: hidden;
   }
@@ -117,7 +117,7 @@ const Wrapper = styled.section`
       left: 50%;
       max-width: 30rem;
       transform: translate(-50%, -50%);
-      background: var(--clr-grey-2);
+      background: rgba(0, 0, 0, 0.5);
       border-radius: var(--radius);
       transition: var(--transition);
     }

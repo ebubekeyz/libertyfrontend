@@ -83,7 +83,7 @@ const Wrapper = styled.div`
   .login-section {
     height: 100vh;
     background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('/bank.avif') center/cover no-repeat scroll;
+      url('/sidebar2.webp') center/cover no-repeat scroll;
   }
   .form-control {
     position: absolute;
