@@ -14,7 +14,7 @@ const Wrapper = styled.aside`
         rgba(44, 174, 186, 0.5),
         rgba(0, 0, 0, 0.6)
       ),
-      url('/sidebar1.jpg') center/cover no-repeat scroll;
+      url('/bank2.jpg') center/cover no-repeat scroll;
     z-index: 4;
     padding-top: 1rem;
     /* align-items: center;
