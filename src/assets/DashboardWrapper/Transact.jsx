@@ -65,6 +65,8 @@ const Wrapper = styled.div`
     display: flex;
     gap: 1rem;
     align-items: start;
+    background: var(--clr-primary-7);
+    text-transform: capitalize;
   }
 
   .form-alert {
