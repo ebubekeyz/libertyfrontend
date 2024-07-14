@@ -42,8 +42,8 @@ const Wrapper = styled.aside`
   }
   .passport,
   .pass {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 30rem;
     object-fit: cover;
   }

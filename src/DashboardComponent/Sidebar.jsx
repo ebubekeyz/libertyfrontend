@@ -78,7 +78,8 @@ const Sidebar = ({ onClick, onClick2 }) => {
               <h1
                 style={{
                   fontSize: '1rem',
-                  marginBottom: '1rem',
+                  marginBottom: '2rem',
+                  marginTop: '0.5rem',
                   color: 'white',
                 }}
               >
