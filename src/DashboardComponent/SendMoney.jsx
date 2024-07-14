@@ -31,6 +31,7 @@ export const action =
     const formData = await request.formData();
     const { user, balance } = store.getState().userState;
     const data = Object.fromEntries(formData);
+    console.log(data);
 
     if (balance > 0) {
       try {
@@ -241,7 +242,6 @@ then close all select boxes: */
     if (pin === mainAccount[length].pin) {
       popup.classList.remove('showPopup');
       alertImg.classList.add('show2');
-      nav('/dashboard/sendMoney');
     } else {
       alert.innerHTML =
         'Your transaction is unsuccessful. please contact support to resolve this issue.';
@@ -270,25 +270,16 @@ then close all select boxes: */
             <FaTimes className="close" />
           </div>
 
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-
-              background: 'var(--clr-primary-5)',
-              padding: '0.3rem 0',
-            }}
-          >
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img
               src="/logo.png"
-              style={{ width: '1rem', marginRight: '1rem' }}
+              style={{
+                width: '10rem',
+                marginRight: '1rem',
+                texeAlign: 'center',
+              }}
               alt="logo"
             />
-            <h4>Pledge</h4>
-            <h4 className="nav-logo" style={{ color: 'var(--clr-primary-10)' }}>
-              Bank
-            </h4>
           </div>
 
           <div className="c-img">

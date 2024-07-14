@@ -278,7 +278,15 @@ const Wrapper = styled.div`
   .input:focus {
     outline: none;
   }
-
+  .main-btn {
+    display: none;
+  }
+  .pop {
+    display: none;
+  }
+  #sbtn {
+    display: none;
+  }
   .input::placeholder {
     color: var(--clr-grey-6);
   }
