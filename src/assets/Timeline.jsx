@@ -48,7 +48,7 @@ const Wrapper = styled.section`
     border-radius: 50%;
     display: grid;
     place-items: center;
-    color: var(--clr-primary-1);
+    color: var(--clr-grey-1);
     font-weight: bold;
   }
   .timeline-item:nth-child(even) .number {

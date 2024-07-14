@@ -63,7 +63,7 @@ const Wrapper = styled.section`
   .next {
     position: absolute;
     top: 200px;
-    background: var(--clr-primary-8);
+    background: var(--clr-grey-2);
     color: var(--white);
     width: 1.25rem;
     height: 1.25rem;
