@@ -62,10 +62,15 @@ const Landing = () => {
   console.log(filterID, filterStatus);
   const [show2, setShow2] = useState(true);
 
-  const removeAlert = async () => {
+  const removeAlert = async (id) => {
     const resp = await customFetch.patch(
-      `/addFund/${user._id}/editUserAddFund`,
-      { status: 'sent' }
+      `/addFund/${id}`,
+      { status: 'sent' },
+      {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
     );
     setShow2(false);
     window.location.reload('');
@@ -151,7 +156,10 @@ const Landing = () => {
             <article key={_id} className="transfer">
               <div className="split">
                 <h4 className="date">{date1}</h4>
-                <FaTimes onClick={removeAlert} style={{ cursor: 'pointer' }} />
+                <FaTimes
+                  onClick={() => removeAlert(_id)}
+                  style={{ cursor: 'pointer' }}
+                />
               </div>
               <div className="inner-transfer-cont">
                 <div className="details">
