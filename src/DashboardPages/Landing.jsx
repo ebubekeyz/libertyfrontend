@@ -15,7 +15,7 @@ import { formatPrice } from '../utils';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
 import { FiRefreshCcw } from 'react-icons/fi';
-import { FaArrowAltCircleDown, FaRegIdCard } from 'react-icons/fa';
+import { FaArrowAltCircleDown, FaRegIdCard, FaTimes } from 'react-icons/fa';
 
 export const loader = (store) => async () => {
   const user = store.getState().userState.user;
@@ -27,7 +27,7 @@ export const loader = (store) => async () => {
 };
 
 const Landing = () => {
-  const { withdrawBalance, balance, deposit, user } = useSelector(
+  const { withdrawBalance, balance, deposit, user, withdraw } = useSelector(
     (state) => state.userState
   );
   const totalBalance = balance - withdrawBalance;
@@ -49,6 +49,26 @@ const Landing = () => {
 
   const format = (x) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  };
+
+  const filterID = Object.values(deposit).filter(
+    (item) => item.user === user._id
+  );
+
+  const filterStatus = Object.values(filterID).filter(
+    (item) => item.status === 'processing'
+  );
+
+  console.log(filterID, filterStatus);
+  const [show2, setShow2] = useState(true);
+
+  const removeAlert = async () => {
+    const resp = await customFetch.patch(
+      `/addFund/${user._id}/editUserAddFund`,
+      { status: 'sent' }
+    );
+    setShow2(false);
+    window.location.reload('');
   };
 
   return (
@@ -100,6 +120,14 @@ const Landing = () => {
               <FaRegIdCard className="ico" />
               <p>Card</p>
             </Link>
+            <Link to="/dashboard/notification" className="inner-icon">
+              <FaRegIdCard className="ico" />
+              <p>message</p>
+            </Link>
+            <Link to="/dashboard/account" className="inner-icon">
+              <FaRegIdCard className="ico" />
+              <p>Settings</p>
+            </Link>
 
             {user.role === 'admin' || user.role === 'owner' ? (
               <Link to="/dashboard/adminDeposit" className="inner-icon">
@@ -115,6 +143,30 @@ const Landing = () => {
           </div>
         </article>
       </div>
+
+      {show2 &&
+        filterStatus.map((item) => {
+          const { createdAt, amount, accountName, date1, date2, _id } = item;
+          return (
+            <article key={_id} className="transfer">
+              <div className="split">
+                <h4 className="date">{date1}</h4>
+                <FaTimes onClick={removeAlert} style={{ cursor: 'pointer' }} />
+              </div>
+              <div className="inner-transfer-cont">
+                <div className="details">
+                  <h4 className="name">Transfer from {accountName}</h4>
+                  <p>{date2}</p>
+                </div>
+
+                <div className="approve">
+                  <h5>Successful</h5>
+                  <h4 className="amount">USD {format(amount)}</h4>
+                </div>
+              </div>
+            </article>
+          );
+        })}
 
       {/* {realDeposit.length > 0 ? (
         <article className="transfer">

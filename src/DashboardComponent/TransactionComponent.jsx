@@ -90,25 +90,6 @@ const TransactionComponent = () => {
             const { createdAt, amount, accountName, date1, date2, _id } = item;
 
             return (
-              // <article key={_id} className="transfer">
-              //   <h4 className="date">
-              //     {moment(createdAt).format('Do MMMM YYYY')}
-              //   </h4>
-              //   <div className="inner-transfer-cont">
-              //     <div className="details">
-              //       <h4 className="name">Transfer from {accountName}</h4>
-              //       <p>
-              //         {moment(createdAt).format('h:mm a')},{' '}
-              //         {moment(createdAt).format('DD/MM/YYYY')}
-              //       </p>
-              //     </div>
-
-              //     <div className="approve">
-              //       <h5>Successful</h5>
-              //       <h4 className="amount">USD {format(amount)}</h4>
-              //     </div>
-              //   </div>
-              // </article>
               <article key={_id} className="transfer">
                 <h4 className="date">{date1}</h4>
                 <div className="inner-transfer-cont">
