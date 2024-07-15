@@ -12,17 +12,13 @@ const Wrapper = styled.div`
   .eye {
     cursor: pointer;
     font-size: 1.1rem;
-    color: var(--clr-grey-2);
+    color: var(--clr-grey-9);
   }
 
   .balance {
     text-align: center;
     color: white;
-    background: linear-gradient(
-        to right,
-        rgba(0, 70, 70, 0.9),
-        var(--clr-grey-10)
-      ),
+    background: linear-gradient(to right, rgba(0, 70, 70, 0.6), rgb(0, 70, 70)),
       url('/bank2.jpg') center/cover no-repeat scroll;
     animation: change 10s linear infinite;
     border-radius: var(--radius);
@@ -33,11 +29,7 @@ const Wrapper = styled.div`
   }
   @keyframes change {
     to {
-      background: linear-gradient(
-          to right,
-          rgb(0, 70, 70),
-          rgba(255, 255, 255, 0.9)
-        ),
+      background: linear-gradient(to left, rgba(0, 70, 70, 0.6), rgb(0, 70, 70)),
         url('/bank2.jpg') center/cover no-repeat scroll;
     }
   }
@@ -72,7 +64,7 @@ const Wrapper = styled.div`
   .icons {
     display: flex;
     flex-wrap: wrap;
-    justify: space-between;
+    justify-content: space-between;
 
     gap: 1rem;
   }
@@ -80,10 +72,14 @@ const Wrapper = styled.div`
     color: var(--clr-grey-9);
   }
   .inner-icon {
-    flex: 0 0 calc(33.3% - 2rem);
+    flex: 0 0 calc(33.3% - 1rem);
     padding-top: 1rem;
     border-radius: var(--radius);
-    background: var(--clr-primary-5);
+    background: linear-gradient(
+      to right,
+      rgba(0, 70, 70, 0.9),
+      var(--clr-primary-2)
+    );
     width: 20rem;
     height: 5rem;
     cursor: pointer;
