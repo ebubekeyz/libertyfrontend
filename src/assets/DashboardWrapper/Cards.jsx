@@ -12,8 +12,11 @@ const Wrapper = styled.div`
     border-radius: var(--radius);
     box-shadow: var(--light-shadow);
     transition: var(--transition);
-    background: linear-gradient(to right, var(--clr-grey-4), var(--white));
-    max-width: 37rem;
+    background: linear-gradient(to right, #000, var(--white));
+    max-width: 32rem;
+  }
+  .card-main:hover {
+    background: linear-gradient(to right, rgb(0, 70, 70), var(--white));
   }
   .header {
     display: flex;

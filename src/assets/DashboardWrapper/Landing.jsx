@@ -12,30 +12,41 @@ const Wrapper = styled.div`
   .eye {
     cursor: pointer;
     font-size: 1.1rem;
+    color: var(--clr-grey-2);
   }
 
   .balance {
     text-align: center;
-    color: var(--clr-grey-9);
+    color: white;
     background: linear-gradient(
-        to left,
-        rgba(40, 200, 199, 0.9),
-        rgba(0, 0, 0, 0.8)
+        to right,
+        rgba(0, 70, 70, 0.9),
+        var(--clr-grey-10)
       ),
-      url('/bank4.jpg') center/cover no-repeat scroll;
-
+      url('/bank2.jpg') center/cover no-repeat scroll;
+    animation: change 10s linear infinite;
     border-radius: var(--radius);
     padding: 3rem 0;
     box-shadow: var(--light-shadow);
     transition: var(--transition);
-    height: 14.2rem;
+    height: 16rem;
+  }
+  @keyframes change {
+    to {
+      background: linear-gradient(
+          to right,
+          rgb(0, 70, 70),
+          rgba(255, 255, 255, 0.9)
+        ),
+        url('/bank2.jpg') center/cover no-repeat scroll;
+    }
   }
   .balance:hover {
     box-shadow: var(--dark-shadow);
   }
   .balance p {
     margin-bottom: 0.7rem;
-    color: var(--clr-grey-9);
+    color: white;
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
     font-weight: bold;
