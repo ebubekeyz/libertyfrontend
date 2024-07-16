@@ -4,7 +4,12 @@ const Wrapper = styled.div`
   .account {
     margin: 2rem 0;
   }
-
+  .account-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 0 auto;
+  }
   .sub-menu {
     display: flex;
     justify-content: space-between;
@@ -26,6 +31,15 @@ const Wrapper = styled.div`
     gap: 1rem;
     align-items: start;
   }
+
+  .passport,
+  .pass {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 30rem;
+    object-fit: cover;
+    margin: 0 auto;
+  }
   .transfer {
     padding: 2rem 2rem;
     overflow-x: hidden;
@@ -38,8 +52,7 @@ const Wrapper = styled.div`
     gap: 1rem;
     box-shadow: var(--light-shadow);
     border-bottom: 2px solid var(--clr-primary-4);
-    margin-bottom: 2rem;
-    margin-top: 0;
+
     color: var(--clr-grey-2);
   }
   .item {

@@ -22,6 +22,13 @@ const AccountInfo = () => {
   const year = dob.slice(0, 4);
   const age = Number(moment().format('YYYY')) - year;
 
+  const passport = useSelector((state) => state.userState.passport);
+
+  let pass =
+    process.env.NODE_ENV !== 'production'
+      ? 'http://localhost:7000'
+      : 'https://libertycredit-union.onrender.com';
+
   return (
     <Wrapper>
       <div className="account">
@@ -37,46 +44,51 @@ const AccountInfo = () => {
           </Link>
         </div>
 
-        <article className="transfer">
-          <div className="inner-transfer-cont">
-            <div className="details">
-              <p className="name">Name:</p>
-              <p className="item">
-                {user.firstName} {user.lastName}
-              </p>
+        <div className="account-cont">
+          <article className="transfer">
+            <div className="passport">
+              <img src={`${pass}${passport}`} alt="passport" className="pass" />
             </div>
+            <div className="inner-transfer-cont">
+              <div className="details">
+                <p className="name">Name:</p>
+                <p className="item">
+                  {user.firstName} {user.lastName}
+                </p>
+              </div>
 
-            <div className="details">
-              <p className="name">Age:</p>
-              <p className="item">{age} years</p>
-            </div>
+              <div className="details">
+                <p className="name">Age:</p>
+                <p className="item">{age} years</p>
+              </div>
 
-            <div className="details">
-              <p className="name">Address:</p>
-              <p className="item">{user.address}</p>
-            </div>
+              <div className="details">
+                <p className="name">Address:</p>
+                <p className="item">{user.address}</p>
+              </div>
 
-            <div className="details">
-              <p className="name">Occupation:</p>
-              <p className="item">{user.occupation}</p>
-            </div>
+              <div className="details">
+                <p className="name">Occupation:</p>
+                <p className="item">{user.occupation}</p>
+              </div>
 
-            <div className="details">
-              <p className="name">Marital Status:</p>
-              <p className="item">{user.maritalStatus}</p>
-            </div>
+              <div className="details">
+                <p className="name">Marital Status:</p>
+                <p className="item">{user.maritalStatus}</p>
+              </div>
 
-            <div className="details">
-              <p className="name">Email:</p>
-              <p className="item">{user.email}</p>
-            </div>
+              <div className="details">
+                <p className="name">Email:</p>
+                <p className="item">{user.email}</p>
+              </div>
 
-            <div className="details">
-              <p className="name">Country:</p>
-              <p className="item">{user.country}</p>
+              <div className="details">
+                <p className="name">Country:</p>
+                <p className="item">{user.country}</p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
     </Wrapper>
   );

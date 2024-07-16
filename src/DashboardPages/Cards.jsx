@@ -22,7 +22,6 @@ const Cards = () => {
   return (
     <Wrapper>
       <div className="cards">
-        <h4>Virtual Card</h4>
         <article className="card-main">
           <div className="header">
             <p>debit</p>
