@@ -83,6 +83,16 @@ const AccountInfo = () => {
               </div>
 
               <div className="details">
+                <p className="name">Phone Number:</p>
+                <p className="item">{user.phone}</p>
+              </div>
+
+              <div className="details">
+                <p className="name">Gender:</p>
+                <p className="item">{user.gender}</p>
+              </div>
+
+              <div className="details">
                 <p className="name">Country:</p>
                 <p className="item">{user.country}</p>
               </div>
