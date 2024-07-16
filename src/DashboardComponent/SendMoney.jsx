@@ -204,7 +204,7 @@ then close all select boxes: */
       confirmBtn.style.display = 'none';
       setShow(true);
     } else {
-      alert.innerHTML = `Sorry you cannot transfer at the moment. Please contact Support team to resolve this issue`;
+      alert.innerHTML = `Incorrect Details Provided. Please try again.`;
       alert.style.background = 'var(--clr-primary-8)';
       setTimeout(() => {
         alert.innerHTML = '';
@@ -243,8 +243,7 @@ then close all select boxes: */
       popup.classList.remove('showPopup');
       alertImg.classList.add('show2');
     } else {
-      alert.innerHTML =
-        'Your transaction is unsuccessful. please contact support to resolve this issue.';
+      alert.innerHTML = 'Invalid Pin';
       alert.style.background = 'var(--clr-primary-8)';
 
       setTimeout(() => {

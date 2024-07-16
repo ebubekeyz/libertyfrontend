@@ -27,7 +27,7 @@ export const action =
         alert.innerHTML = '';
         alert.style.background = 'none';
       }, 3000);
-
+      window.location.reload();
       return null;
     } catch (error) {
       const errorMessage =

@@ -1,4 +1,4 @@
-import { Form, useLoaderData } from 'react-router-dom';
+import { Form, redirect, useLoaderData } from 'react-router-dom';
 import { FormInput, SubmitBtn } from '../components';
 import { customFetch } from '../utils';
 import Wrapper from '../assets/DashboardWrapper/SetTransferDetails';
@@ -15,7 +15,7 @@ export const action =
     const account = store.getState().userState.account;
 
     const id = Object.values(account)[0]._id;
-    console.log(id);
+
     try {
       const resp = await customFetch.patch(`/account/${id}`, data, {
         headers: {
@@ -29,8 +29,8 @@ export const action =
         alert.innerHTML = '';
         alert.style.background = 'none';
       }, 3000);
-
-      return null;
+      window.location.reload();
+      return redirect('/dashboard/set-transfer-details');
     } catch (error) {
       const errorMessage = error.resp.data.msg || 'Error';
       alert.textContent = errorMessage;
