@@ -22,7 +22,7 @@ export const action =
         alert.innerHTML = '';
         alert.style.background = 'none';
       }, 3000);
-      return null;
+      return window.location.reload();
     } catch (error) {
       const errorMessage = error.resp.data.msg || 'Error';
       alert.textContent = errorMessage;
