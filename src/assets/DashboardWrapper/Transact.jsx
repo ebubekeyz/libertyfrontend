@@ -7,11 +7,11 @@ const Wrapper = styled.div`
 
   .transfer {
     background: var(--clr-grey-10);
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     border-radius: var(--radius);
     transition: var(--transition);
     display: grid;
-    gap: 1rem;
+    column-gap: 1rem;
   
     margin-bottom: 2rem;
     margin-top: 0;

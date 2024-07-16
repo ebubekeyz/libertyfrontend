@@ -14,6 +14,7 @@ const Wrapper = styled.div`
     color: var(--clr-primary-1);
   }
   .footer {
+    z-index: 100;
     padding-bottom: 2rem;
     background: #222;
     display: grid;

@@ -8,7 +8,7 @@ const Wrapper = styled.aside`
     bottom: 0;
     width: 100%;
     height: 150%;
-
+    z-index: -20;
     background: linear-gradient(
         to left,
         rgba(44, 174, 186, 0.5),
@@ -144,7 +144,7 @@ const Wrapper = styled.aside`
       padding: 0rem 3rem;
       padding-top: 1rem;
       padding-bottom: 4rem;
-      height: 330%;
+      height: 418%;
       bottom: 0;
       margin: 0 auto;
     }

@@ -7,6 +7,7 @@ export { default as AdminDeposit } from './AdminDeposit';
 export { default as Account } from './Account';
 export { default as Transaction } from './Transaction';
 export { default as Security } from './Security';
+export { default as AllTransactions } from './AllTransactions';
 export { default as AccountInfo } from './AccountInfo';
 export { default as Incoming } from './Incoming';
 export { default as SetTransferDetails } from './SetTransferDetails';

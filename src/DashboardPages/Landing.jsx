@@ -64,7 +64,6 @@ const Landing = () => {
     (item) => item.status === 'processing'
   );
 
-  console.log(filterID, filterStatus);
   const [show2, setShow2] = useState(true);
 
   const removeAlert = async (id) => {

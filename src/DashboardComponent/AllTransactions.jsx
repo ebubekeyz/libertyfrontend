@@ -3,10 +3,8 @@ import { useSelector } from 'react-redux';
 import Wrapper from '../assets/DashboardWrapper/Transact';
 import { Link, useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
-import { Blog, Services, Skills, Testimonies, Timeline } from '../components';
-import { Connect } from 'vite';
 
-const TransactionComponent = () => {
+const AllTransactions = () => {
   const [show, setShow] = useState(true);
 
   const handleIncoming = () => {
@@ -37,7 +35,7 @@ const TransactionComponent = () => {
               Incoming
             </div>
           </div>
-          {realWithdraw.slice(0, 3).map((item) => {
+          {realWithdraw.map((item) => {
             const { createdAt, amount, accountName, date1, date2, _id } = item;
 
             return (
@@ -88,42 +86,29 @@ const TransactionComponent = () => {
               Outgoing
             </div>
           </div>
-          {Object.values(deposit)
-            .slice(0, 3)
-            .map((item) => {
-              const { createdAt, amount, accountName, date1, date2, _id } =
-                item;
+          {Object.values(deposit).map((item) => {
+            const { createdAt, amount, accountName, date1, date2, _id } = item;
 
-              return (
-                <article key={_id} className="transfer">
-                  {/* <h4 className="date">{date1}</h4> */}
-                  <div className="inner-transfer-cont">
-                    <div className="details">
-                      <h4 className="name">Transfer from {accountName}</h4>
-                      <p>{date2}</p>
-                    </div>
-
-                    <div className="approve">
-                      <h5>Successful</h5>
-                      <h4 className="amount">USD {format(amount)}</h4>
-                    </div>
+            return (
+              <article key={_id} className="transfer">
+                {/* <h4 className="date">{date1}</h4> */}
+                <div className="inner-transfer-cont">
+                  <div className="details">
+                    <h4 className="name">Transfer from {accountName}</h4>
+                    <p>{date2}</p>
                   </div>
-                </article>
-              );
-            })}
+
+                  <div className="approve">
+                    <h5>Successful</h5>
+                    <h4 className="amount">USD {format(amount)}</h4>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       )}
-
-      <div className="more">
-        <a
-          href="/dashboard/all-transactions"
-          className="btn more-btn"
-          style={{ textTransform: 'capitalize' }}
-        >
-          View All...
-        </a>
-      </div>
     </Wrapper>
   );
 };
-export default TransactionComponent;
+export default AllTransactions;
