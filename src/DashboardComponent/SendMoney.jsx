@@ -23,6 +23,15 @@ export const action =
     const amount = document.querySelector('#amount');
     const bank = document.querySelector('#bank');
     const account = document.querySelector('#account');
+    const name2 = document.querySelector('#accname');
+    const bank2 = document.querySelector('#accbank');
+    const desc = document.querySelector('#accdesc');
+    const num = document.querySelector('#accnum');
+    const deb = document.querySelector('#accdeb');
+    const date = document.querySelector('#accdate');
+    const amt = document.querySelector('#accamt');
+    const legBal = document.querySelector('#acclegbal');
+    const bal = document.querySelector('#accbal');
     // const popup = document.querySelector('.popup');
     const format = (x) => {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -42,6 +51,17 @@ export const action =
         bank.textContent = withdraw2.bank;
         amount.textContent = `USD ${format(withdraw2.amount)}`;
         account.textContent = withdraw2.accountNumber;
+        name2.textContent = withdraw2.accountName;
+        bank2.textContent = withdraw2.bank;
+        amt.textContent = `USD ${format(withdraw2.amount)}`;
+        desc.textContent = withdraw2.narration;
+        deb.textContent = 'Debit';
+        num.textContent = withdraw2.accountNumber;
+        date.textContent = `${moment(withdraw2.createdAt).format(
+          'Do MMMM YYYY'
+        )}, ${moment(withdraw2.createdAt).format('h:mm a')}`;
+        legBal.textContent = `USD ${format(balance)}`;
+        legBal.textContent = `USD ${format(balance - withdraw2.amount)}`;
 
         // console.log(withdraw2);
 
@@ -244,10 +264,11 @@ then close all select boxes: */
     const alertImg = document.querySelector('.alert-img');
     const alert = document.querySelector('.form-alert');
     const msg = document.querySelector('.msg');
+    const msg1 = document.querySelector('.msg1');
 
     if (pin === mainAccount[length].pin && status === 'false') {
       popup.classList.remove('showPopup');
-      alertImg.classList.add('show2');
+      msg1.style.display = 'block';
 
       const resp = await customFetch.patch(
         `/account/${id}`,
@@ -279,6 +300,88 @@ then close all select boxes: */
       <div className="">
         <div className="form-alert"></div>
         <div className="alert-main"></div>
+
+        <div className="msg1">
+          <div className="msg1-cont">
+            <div style={{ display: 'flex', justifyContent: 'end' }}>
+              <FaTimes className="inline" onClick={closeNotice} />
+            </div>
+            <h1
+              style={{
+                fontSize: '1rem',
+                letterSpacing: '0rem',
+                textTransform: 'uppercase',
+                textAlign: 'center',
+                marginBottom: '2rem',
+              }}
+            >
+              Transaction Alert
+            </h1>
+          </div>
+          <div className="trans">
+            <article className="trans-inner" style={{ paddingTop: '1.5rem' }}>
+              <h3 className="title">Account Name</h3>
+              <h3 className="text" id="accname">
+                Theophilus
+              </h3>
+            </article>
+            <article className="trans-inner">
+              <h3 className="title">Account Number</h3>
+              <h3 className="text" id="accnum">
+                87653456789
+              </h3>
+            </article>
+            <article className="trans-inner">
+              <h3 className="title">Bank Name</h3>
+              <h3 className="text" id="accbank">
+                Bank Of America
+              </h3>
+            </article>
+            <article className="trans-inner">
+              <h3 className="title">Credit/Debit</h3>
+              <h3 className="text" id="accdeb">
+                Debit
+              </h3>
+            </article>
+            <article className="trans-inner">
+              <h3 className="title">Description</h3>
+              <h3 className="text" id="accdesc">
+                Debit
+              </h3>
+            </article>
+            <article className="trans-inner">
+              <h3 className="title">Date/Time</h3>
+              <h3 className="text" id="accdate">
+                12/2/2025, 11:00am
+              </h3>
+            </article>
+            <article className="trans-inner">
+              <h3 className="title">Amount</h3>
+              <h3 className="text" id="accamt">
+                12,0000
+              </h3>
+            </article>
+            <article className="trans-inner">
+              <h3 className="title">Ledger Balance</h3>
+              <h3 className="text" id="acclegbal">
+                USD 12,0000
+              </h3>
+            </article>
+            <article
+              className="trans-inner"
+              style={{
+                background: 'var(--clr-primary-4',
+                paddingTop: '1rem',
+                color: 'white',
+              }}
+            >
+              <h3 className="title">Balance</h3>
+              <h3 className="text" id="accbal">
+                USD 12,0000
+              </h3>
+            </article>
+          </div>
+        </div>
 
         <div className="msg">
           <div className="cont">

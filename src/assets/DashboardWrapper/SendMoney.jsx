@@ -287,7 +287,38 @@ const Wrapper = styled.div`
     max-width: 30rem;
     display: none;
   }
+  .msg1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    display: none;
+    z-index: 50;
+    width: 90%;
+    max-width: 30rem;
+  }
 
+  .trans-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .trans-inner h3 {
+    font-size: 0.9rem;
+    letter-spacing: 0rem;
+  }
+
+  .trans {
+    border: 1px solid var(--clr-primary-4);
+    padding: 0rem 0rem;
+    padding-bottom: 0;
+  }
+  .trans-inner h3 {
+    padding: 0 1rem;
+  }
   .msg h1 {
     font-size: 1.2rem;
   }
