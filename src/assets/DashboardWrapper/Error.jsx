@@ -7,13 +7,11 @@ const Wrapper = styled.div`
   place-items: center;
   text-align: center;
   height: 50vh;
-  width: 100vw;
 
   font-weight: bold;
 
   .errorElement {
-    color: var(--clr-primary-1);
-    font-size: 8rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 

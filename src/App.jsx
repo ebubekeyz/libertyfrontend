@@ -197,6 +197,7 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/sendMoney',
         element: <SendMoney />,
+        errorElement: <DashboardErrorElement />,
         loader: SendMoneyLoader(store),
         action: SendMoneyAction(store),
       },
@@ -210,12 +211,14 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/deposit',
         element: <Deposit />,
+        errorElement: <DashboardErrorElement />,
         loader: DepositLoader(store),
       },
 
       {
         path: '/dashboard/account',
         element: <Account />,
+        errorElement: <DashboardErrorElement />,
         loader: AccountLoader(store),
         action: AccountAction(store),
       },
@@ -223,36 +226,42 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/security',
         element: <Security />,
+        errorElement: <DashboardErrorElement />,
         loader: SecurityLoader(store),
         action: SecurityAction(store),
       },
       {
         path: '/dashboard/passport',
         element: <Passport />,
+        errorElement: <DashboardErrorElement />,
         loader: PassportLoader(store),
         action: PassportAction(store),
       },
       {
         path: '/dashboard/update',
         element: <Update />,
+        errorElement: <DashboardErrorElement />,
         loader: UpdateLoader(store),
         action: UpdateWithdrawalAction(store),
       },
       {
         path: '/dashboard/changePassword',
         element: <ChangePassword />,
+        errorElement: <DashboardErrorElement />,
         loader: ChangePasswordLoader(store),
         action: ChangePasswordAction(store),
       },
       {
         path: '/dashboard/set-transfer-details',
         element: <SetTransferDetails />,
+        errorElement: <DashboardErrorElement />,
         loader: SetTransferDetailsLoader(store),
         action: SetTransferDetailsAction(store),
       },
       {
         path: '/dashboard/updateDeposit',
         element: <UpdateDeposit />,
+        errorElement: <DashboardErrorElement />,
         loader: UpdateDepositLoader(store),
         action: UpdateDepositAction(store),
       },
@@ -260,12 +269,14 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/updateUsers',
         element: <UpdateUsers />,
+        errorElement: <DashboardErrorElement />,
         loader: UpdateUsersLoader(store),
         action: UpdateUsersAction(store),
       },
       {
         path: '/dashboard/addUser',
         element: <AddUser />,
+        errorElement: <DashboardErrorElement />,
         loader: AddUserLoader(store),
         action: AddUserAction(store),
       },
@@ -273,32 +284,38 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/withdraw',
         element: <Withdraw />,
+        errorElement: <DashboardErrorElement />,
         loader: WithdrawLoader(store),
         action: WithdrawAction(store),
       },
       {
         path: '/dashboard/delete',
         element: <Delete />,
+        errorElement: <DashboardErrorElement />,
         loader: DeleteLoader(store),
       },
 
       {
         path: '/dashboard/notification',
         element: <Notification />,
+        errorElement: <DashboardErrorElement />,
         loader: NotificationLoader(store),
       },
       {
         path: '/dashboard/cards',
         element: <Cards />,
+        errorElement: <DashboardErrorElement />,
         loader: CardsLoader(store),
       },
       {
         path: '/dashboard/siteMap',
         element: <SiteMap />,
+        errorElement: <DashboardErrorElement />,
       },
       {
         path: '/dashboard/notificationMessage',
         element: <NotificationMessage />,
+        errorElement: <DashboardErrorElement />,
         action: NotificationMessageAction(store),
       },
       {
@@ -309,22 +326,26 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/users',
         element: <Users />,
+        errorElement: <DashboardErrorElement />,
         loader: UsersLoader(store),
       },
       {
         path: '/dashboard/transaction',
         element: <Transaction />,
+        errorElement: <DashboardErrorElement />,
         loader: TransactionLoader(store),
       },
       {
         path: '/dashboard/changePhoto',
         element: <ChangePhoto />,
+        errorElement: <DashboardErrorElement />,
         action: ChangePhotoAction(store),
         loader: ChangePhotoLoader(store),
       },
       {
         path: '/dashboard/incoming-transaction',
         element: <Incoming />,
+        errorElement: <DashboardErrorElement />,
       },
     ],
   },

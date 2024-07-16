@@ -4,7 +4,9 @@ const ErrorElement = () => {
   return (
     <Wrapper>
       <div>
-        <p className="errorElement">There was an Error...</p>
+        <p className="errorElement">
+          Oops! Something went wrong. Please try again...
+        </p>
       </div>
       ;
     </Wrapper>
