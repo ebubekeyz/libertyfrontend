@@ -56,8 +56,6 @@ const Wrapper = styled.div`
     color: var(--clr-grey-2);
   }
   .item {
-    text-transform: capitalize;
-
     letter-spacing: 1;
     color: var(--clr-grey-2);
   }
