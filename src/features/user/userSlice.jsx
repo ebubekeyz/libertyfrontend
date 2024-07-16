@@ -193,6 +193,7 @@ const userSlice = createSlice({
       state.allWithdraw = null;
       state.allDeposit = null;
       localStorage.removeItem('emailId');
+      localStorage.removeItem('bal');
       localStorage.removeItem('user');
       localStorage.removeItem('allWithdraw');
       localStorage.removeItem('allDeposit');

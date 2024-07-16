@@ -40,12 +40,14 @@ export const action =
     const formData = await request.formData();
     const { user, balance } = store.getState().userState;
     const data = Object.fromEntries(formData);
-    console.log(data);
+
+    const balanceMain = JSON.parse(localStorage.getItem('bal'));
 
     if (balance > 0) {
       try {
         const resp = await customFetch.post('/withdraw', data);
         // popup.classList.add('showPopup');
+
         const withdraw2 = resp.data.attributes;
         name.textContent = withdraw2.accountName;
         bank.textContent = withdraw2.bank;
@@ -60,8 +62,11 @@ export const action =
         date.textContent = `${moment(withdraw2.createdAt).format(
           'Do MMMM YYYY'
         )}, ${moment(withdraw2.createdAt).format('h:mm a')}`;
-        legBal.textContent = `USD ${format(balance)}`;
-        legBal.textContent = `USD ${format(balance - withdraw2.amount)}`;
+
+        const ledgerBalance = Number(balanceMain.bal) - withdraw2.amount;
+        console.log(ledgerBalance);
+        bal.textContent = `USD ${format(ledgerBalance)}`;
+        legBal.textContent = `USD ${format(Number(balanceMain.bal))}`;
 
         // console.log(withdraw2);
 

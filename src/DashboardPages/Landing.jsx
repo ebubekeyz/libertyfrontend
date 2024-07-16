@@ -31,6 +31,11 @@ const Landing = () => {
     (state) => state.userState
   );
   const totalBalance = balance - withdrawBalance;
+  const bal = {
+    bal: totalBalance,
+  };
+
+  localStorage.setItem('bal', JSON.stringify(bal));
 
   const { accountNumber, typeOfAccount, updatedAt } = user;
 
