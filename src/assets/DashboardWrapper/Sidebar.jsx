@@ -144,7 +144,7 @@ const Wrapper = styled.aside`
       padding: 0rem 3rem;
       padding-top: 1rem;
       padding-bottom: 4rem;
-      height: 418%;
+      height: 100%;
       bottom: 0;
       margin: 0 auto;
     }

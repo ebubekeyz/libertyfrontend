@@ -14,11 +14,9 @@ const Wrapper = styled.div`
     color: var(--clr-primary-1);
   }
   .footer {
-    padding-bottom: 1rem;
-
     display: grid;
     place-items: center;
-    padding-top: 1rem;
+    padding-top: 6rem;
   }
   .social-icons {
     display: grid;

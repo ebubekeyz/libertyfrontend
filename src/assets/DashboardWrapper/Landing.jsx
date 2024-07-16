@@ -7,6 +7,7 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 2rem;
     margin: 2rem 0;
+    margin-bottom: 0;
   }
 
   .eye {
