@@ -62,12 +62,12 @@ const Navbar = ({ onClick }) => {
   let url =
     process.env.NODE_ENV !== 'production'
       ? 'http://localhost:5173'
-      : 'https://pledge-bank.com';
+      : 'https://libertycredit-union.onrender.com';
 
   let pass =
     process.env.NODE_ENV !== 'production'
       ? 'http://localhost:7000'
-      : 'https://pledgebank.onrender.com';
+      : 'https://libertycredit-union.onrender.com';
 
   // useEffect(() => {
   //   clickNotice();

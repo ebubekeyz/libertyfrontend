@@ -34,7 +34,7 @@ export const action =
           Authorization: `Bearer ${user.token}`,
         },
       });
-      alert.innerHTML = `User Updated Successfully`;
+      alert.innerHTML = `Passport Updated Successfully`;
       alert.style.background = 'var(--clr-primary-8)';
       setTimeout(() => {
         alert.innerHTML = '';
