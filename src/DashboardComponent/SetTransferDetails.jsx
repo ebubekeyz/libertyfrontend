@@ -11,10 +11,12 @@ export const action =
     const alert = document.querySelector('.form-alert');
 
     const formData = await request.formData();
-    const data = Object.fromEntries(formData);
+    let data = Object.fromEntries(formData);
     const account = store.getState().userState.account;
 
     const id = Object.values(account)[0]._id;
+
+    data = { ...data, status: 'false' };
 
     try {
       const resp = await customFetch.patch(`/account/${id}`, data, {

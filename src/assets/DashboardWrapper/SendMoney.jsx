@@ -275,6 +275,34 @@ const Wrapper = styled.div`
     border-radius: var(--radius);
   }
 
+  .msg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--clr-primary-8);
+    padding: 2rem;
+    z-index: 50;
+    width: 90%;
+    max-width: 30rem;
+    display: none;
+  }
+
+  .msg h1 {
+    font-size: 1.2rem;
+  }
+  .cont {
+    display: flex;
+    justify-content: space-between;
+  }
+  .inline {
+    color: red;
+    cursor: pointer;
+  }
+  .msg p {
+    color: var(--clr-grey-4);
+  }
+
   .input:focus {
     outline: none;
   }

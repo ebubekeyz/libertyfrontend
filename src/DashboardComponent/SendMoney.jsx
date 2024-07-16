@@ -170,6 +170,11 @@ then close all select boxes: */
   const navigate = useNavigate();
   const { user, account, allUsers } = useSelector((state) => state.userState);
 
+  const id = Object.values(account)[0]._id;
+  const status = Object.values(account)[0].status;
+
+  console.log(status === 'false');
+
   const [show, setShow] = useState(false);
 
   const length = Object.values(account).length - 1;
@@ -233,24 +238,29 @@ then close all select boxes: */
   };
 
   const nav = useNavigate();
-  const clickPin = () => {
+  const clickPin = async () => {
     const popup = document.querySelector('.popup');
     const pin = document.querySelector('#pin').value;
     const alertImg = document.querySelector('.alert-img');
     const alert = document.querySelector('.form-alert');
+    const msg = document.querySelector('.msg');
 
-    if (pin === mainAccount[length].pin) {
+    if (pin === mainAccount[length].pin && status === 'false') {
       popup.classList.remove('showPopup');
       alertImg.classList.add('show2');
+
+      const resp = await customFetch.patch(
+        `/account/${id}`,
+        { status: 'true' },
+        { headers: { Authorization: `Bearer ${user.token}` } }
+      );
     } else {
-      alert.innerHTML = 'Invalid Pin';
-      alert.style.background = 'var(--clr-primary-8)';
+      msg.style.display = 'block';
 
       setTimeout(() => {
-        alert.innerHTML = '';
-        alert.style.background = 'none';
+        msg.style.display = 'none';
         popup.classList.remove('showPopup');
-      }, 3000);
+      }, 20000);
     }
   };
 
@@ -259,11 +269,28 @@ then close all select boxes: */
     popup.classList.add('showPopup');
   };
 
+  const closeNotice = () => {
+    const msg = document.querySelector('.msg');
+    msg.style.display = 'none';
+    return window.location.reload();
+  };
   return (
     <Wrapper>
       <div className="">
         <div className="form-alert"></div>
         <div className="alert-main"></div>
+
+        <div className="msg">
+          <div className="cont">
+            <h1>Account Suspension Notice!!</h1>
+            <FaTimes className="inline" onClick={closeNotice} />
+          </div>
+          <p>
+            Your account has been suspended and you cannot initiate any
+            transfers at this time. Please contact customer care for assistance.
+            Thank you for your understanding.
+          </p>
+        </div>
         <div ref={receiptRef} className="alert-img">
           <div className="close-btn" onClick={close}>
             <FaTimes className="close" />
