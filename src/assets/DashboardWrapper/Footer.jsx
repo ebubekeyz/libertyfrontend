@@ -14,12 +14,8 @@ const Wrapper = styled.div`
     color: var(--clr-primary-1);
   }
   .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding-bottom: 1rem;
-    background: #222;
+
     display: grid;
     place-items: center;
     padding-top: 1rem;
@@ -50,6 +46,13 @@ const Wrapper = styled.div`
     text-align: center;
     font-size: 1rem;
     text-transform: capitalize;
+  }
+
+  @media screen and (min-width: 1300px) {
+    .footer {
+      margin-left: 22rem;
+      max-width: 950px;
+    }
   }
 `;
 

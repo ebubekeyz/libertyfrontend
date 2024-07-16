@@ -18,6 +18,7 @@ const HomeLayout = () => {
           <div className="section-center" id="dashboard">
             <Outlet />
           </div>
+          <Footer />
         </div>
       )}
     </>
