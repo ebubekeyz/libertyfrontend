@@ -280,7 +280,7 @@ const Wrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--clr-primary-8);
+    background: var(--clr-grey-10);
     padding: 2rem;
     z-index: 50;
     width: 90%;

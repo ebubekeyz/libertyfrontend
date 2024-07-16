@@ -318,9 +318,10 @@ then close all select boxes: */
                 textTransform: 'uppercase',
                 textAlign: 'center',
                 marginBottom: '2rem',
+                color: 'green',
               }}
             >
-              Transaction Alert
+              Transaction Successful
             </h1>
           </div>
           <div className="trans">
@@ -389,8 +390,13 @@ then close all select boxes: */
         </div>
 
         <div className="msg">
+          <div style={{ textAlign: 'center', color: 'red' }}>
+            <h1 style={{ letterSpacing: '0rem' }}>Transaction Failed</h1>
+          </div>
           <div className="cont">
-            <h1>Account Suspension Notice!!</h1>
+            <h1 style={{ letterSpacing: '0rem', textAlign: 'center' }}>
+              Account Suspension Notice!!
+            </h1>
             <FaTimes className="inline" onClick={closeNotice} />
           </div>
           <p>
