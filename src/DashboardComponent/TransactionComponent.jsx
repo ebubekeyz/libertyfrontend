@@ -137,12 +137,12 @@ const TransactionComponent = () => {
       {/* <Services /> */}
       <div className="" style={{ marginTop: '4rem' }}>
         {' '}
-        {/* <Testimonies /> */}
+        <Testimonies />
       </div>
 
       {/* <Skills /> */}
-      {/* <Connect /> */}
-      {/* <Timeline /> */}
+      <Connect />
+      <Timeline />
 
       {/* <Blog /> */}
     </Wrapper>

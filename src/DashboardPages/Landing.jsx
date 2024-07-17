@@ -16,6 +16,7 @@ import moment from 'moment';
 import { useEffect, useState } from 'react';
 import { FiRefreshCcw } from 'react-icons/fi';
 import { FaArrowAltCircleDown, FaRegIdCard, FaTimes } from 'react-icons/fa';
+import { Connect, Testimonies, Timeline } from '../components';
 
 export const loader = (store) => async () => {
   const user = store.getState().userState.user;
@@ -203,6 +204,9 @@ const Landing = () => {
           <h4>You do not have any Deposit</h4>
         </div>
       )} */}
+      <Testimonies />
+      <Connect />
+      <Timeline />
     </Wrapper>
   );
 };
