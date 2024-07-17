@@ -66,7 +66,6 @@ const Landing = () => {
 
   const [show2, setShow2] = useState(true);
   const len = filterStatus.length - 1;
-  console.log(filterStatus[len].amount);
 
   const removeAlert = async (id) => {
     const resp = await customFetch.patch(
@@ -160,14 +159,15 @@ const Landing = () => {
           <article
             key={filterStatus[len]._id}
             className="transfer"
+            style={{ padding: '0.5rem 1rem' }}
             onClick={() => removeAlert(filterStatus[len]._id)}
           >
             <div className="split">
               {/* <h4 className="date">{filterStatus[len].date1}</h4> */}
-              <FaTimes
+              {/* <FaTimes
                 onClick={() => removeAlert(filterStatus[len]._id)}
                 style={{ cursor: 'pointer' }}
-              />
+              /> */}
             </div>
             <div className="inner-transfer-cont">
               <div className="details">
