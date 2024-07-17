@@ -6,7 +6,7 @@ import { service } from '../utils';
 const Services = () => {
   return (
     <Wrapper>
-      <section className="section bg-grey">
+      <section className="section">
         {/* section title */}
         <div className="section-title">
           <h2>services</h2>

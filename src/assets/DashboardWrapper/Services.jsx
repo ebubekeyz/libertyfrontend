@@ -35,17 +35,18 @@ const Wrapper = styled.section`
     background: var(--clr-white);
   }
   @media screen and (min-width: 676px) {
-    .services-center {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      -webkit-column-gap: 2rem;
-      -moz-column-gap: 2rem;
-      column-gap: 2rem;
+    .service {
+      width: 100%;
     }
   }
   @media screen and (min-width: 992px) {
+    .service {
+      width: 30%;
+    }
     .services-center {
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: start;
+      gap: 2rem;
     }
   }
 `;

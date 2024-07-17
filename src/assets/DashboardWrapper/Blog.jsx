@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
+  .blog {
+    width: 80%;
+  }
   .card {
     height: 27rem;
     position: relative;

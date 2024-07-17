@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <Wrapper>
       {' '}
-      <section className="section blog">
+      <section className="section blog" style={{ background: 'transparent' }}>
         {/* <!-- section title --> */}
         <div className="section-title">
           <h2>blog</h2>
@@ -24,7 +24,7 @@ const Blog = () => {
                   <img src={image} alt="project1" />
                   <div className="card-info">
                     <h4>{title}</h4>
-                    <p>{text}</p>
+                    <p>{text.slice(0, 110)}...</p>
                     {/* <div className="card-footer">
                       <img src={image2} />
                       <p>7 min read</p>
