@@ -32,7 +32,7 @@ export const action =
     const amt = document.querySelector('#accamt');
     const legBal = document.querySelector('#acclegbal');
     const bal = document.querySelector('#accbal');
-    // const popup = document.querySelector('.popup');
+    const popup = document.querySelector('.popup');
     const format = (x) => {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     };
@@ -63,12 +63,13 @@ export const action =
           'Do MMMM YYYY'
         )}, ${moment(withdraw2.createdAt).format('h:mm a')}`;
 
-        const ledgerBalance = Number(balanceMain.bal) - withdraw2.amount;
-        console.log(ledgerBalance);
-        bal.textContent = `USD ${format(ledgerBalance)}`;
-        legBal.textContent = `USD ${format(Number(balanceMain.bal))}`;
-
-        // console.log(withdraw2);
+        console.log(balanceMain !== null);
+        if (balanceMain !== null) {
+          const ledgerBalance = Number(balanceMain.bal) - withdraw2.amount;
+          console.log(ledgerBalance);
+          bal.textContent = `USD ${format(ledgerBalance)}`;
+          legBal.textContent = `USD ${format(Number(balanceMain.bal))}`;
+        }
 
         return null;
       } catch (error) {
@@ -198,8 +199,6 @@ then close all select boxes: */
   const id = Object.values(account)[0]._id;
   const status = Object.values(account)[0].status;
 
-  console.log(status === 'false');
-
   const [show, setShow] = useState(false);
 
   const length = Object.values(account).length - 1;
@@ -327,51 +326,35 @@ then close all select boxes: */
           <div className="trans">
             <article className="trans-inner" style={{ paddingTop: '1.5rem' }}>
               <h3 className="title">Account Name</h3>
-              <h3 className="text" id="accname">
-                Theophilus
-              </h3>
+              <h3 className="text" id="accname"></h3>
             </article>
             <article className="trans-inner">
               <h3 className="title">Account Number</h3>
-              <h3 className="text" id="accnum">
-                87653456789
-              </h3>
+              <h3 className="text" id="accnum"></h3>
             </article>
             <article className="trans-inner">
               <h3 className="title">Bank Name</h3>
-              <h3 className="text" id="accbank">
-                Bank Of America
-              </h3>
+              <h3 className="text" id="accbank"></h3>
             </article>
             <article className="trans-inner">
               <h3 className="title">Credit/Debit</h3>
-              <h3 className="text" id="accdeb">
-                Debit
-              </h3>
+              <h3 className="text" id="accdeb"></h3>
             </article>
             <article className="trans-inner">
               <h3 className="title">Description</h3>
-              <h3 className="text" id="accdesc">
-                Debit
-              </h3>
+              <h3 className="text" id="accdesc"></h3>
             </article>
             <article className="trans-inner">
               <h3 className="title">Date/Time</h3>
-              <h3 className="text" id="accdate">
-                12/2/2025, 11:00am
-              </h3>
+              <h3 className="text" id="accdate"></h3>
             </article>
             <article className="trans-inner">
               <h3 className="title">Amount</h3>
-              <h3 className="text" id="accamt">
-                12,0000
-              </h3>
+              <h3 className="text" id="accamt"></h3>
             </article>
             <article className="trans-inner">
               <h3 className="title">Ledger Balance</h3>
-              <h3 className="text" id="acclegbal">
-                USD 12,0000
-              </h3>
+              <h3 className="text" id="acclegbal"></h3>
             </article>
             <article
               className="trans-inner"
@@ -382,9 +365,7 @@ then close all select boxes: */
               }}
             >
               <h3 className="title">Balance</h3>
-              <h3 className="text" id="accbal">
-                USD 12,0000
-              </h3>
+              <h3 className="text" id="accbal"></h3>
             </article>
           </div>
         </div>
