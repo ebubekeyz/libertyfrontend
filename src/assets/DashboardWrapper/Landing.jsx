@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 2rem;
     margin: 2rem 0;
-    margin-bottom: 0;
+    margin-bottom: 4rem;
   }
 
   .eye {
@@ -103,8 +103,8 @@ const Wrapper = styled.div`
     transition: var(--transition);
     display: grid;
     gap: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 0;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
   }
 
   .transfer:hover {
@@ -148,11 +148,11 @@ const Wrapper = styled.div`
 
   .transfer {
     background: var(--clr-grey-10);
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     border-radius: var(--radius);
     transition: var(--transition);
     display: grid;
-    gap: 1rem;
+    column-gap: 1rem;
 
     margin-bottom: 2rem;
     margin-top: 0;
@@ -202,7 +202,7 @@ const Wrapper = styled.div`
   }
   .split {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
   }
   .editAccount,

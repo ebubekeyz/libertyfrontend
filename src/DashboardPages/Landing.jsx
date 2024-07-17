@@ -159,7 +159,7 @@ const Landing = () => {
           return (
             <article key={_id} className="transfer">
               <div className="split">
-                <h4 className="date">{date1}</h4>
+                {/* <h4 className="date">{date1}</h4> */}
                 <FaTimes
                   onClick={() => removeAlert(_id)}
                   style={{ cursor: 'pointer' }}

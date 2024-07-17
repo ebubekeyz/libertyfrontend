@@ -3,9 +3,10 @@ import { useSelector } from 'react-redux';
 import Wrapper from '../assets/DashboardWrapper/Transact';
 import { Link, useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
-import { Services, Skills, Testimonies, Timeline } from '../components';
+import { Skills, Testimonies, Timeline } from '../components';
 import Footer from './Footer';
 import Blog from './Blog';
+import Services from './Services';
 
 const TransactionComponent = () => {
   const [show, setShow] = useState(true);
@@ -126,7 +127,10 @@ const TransactionComponent = () => {
       </div>
 
       {/* <Services /> */}
-      <Testimonies />
+      <div className="" style={{ marginTop: '4rem' }}>
+        {' '}
+        <Testimonies />
+      </div>
 
       {/* <Skills /> */}
       <Timeline />
