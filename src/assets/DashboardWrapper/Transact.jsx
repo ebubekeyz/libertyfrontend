@@ -6,9 +6,10 @@ const Wrapper = styled.div`
   }
 
   .transfer {
-    background: var(--clr-grey-10);
+    border-bottom: 1px solid var(--clr-grey-7);
+     border-top: 1px solid var(--clr-grey-7);
     padding: 2rem 2rem;
-    border-radius: var(--radius);
+
     transition: var(--transition);
     display: grid;
     gap: 1rem;
@@ -16,9 +17,7 @@ const Wrapper = styled.div`
     margin-top: 0rem;
   }
 
-  .transfer:hover {
-    transform: scale(1.02);
-  }
+
   .amount,
   .name {
     letter-spacing: 0.08rem;

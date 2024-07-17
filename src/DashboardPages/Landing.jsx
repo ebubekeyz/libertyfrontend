@@ -162,10 +162,10 @@ const Landing = () => {
             >
               <div className="split">
                 {/* <h4 className="date">{date1}</h4> */}
-                {/* <FaTimes
+                <FaTimes
                   onClick={() => removeAlert(_id)}
                   style={{ cursor: 'pointer' }}
-                /> */}
+                />
               </div>
               <div className="inner-transfer-cont">
                 <div className="details">
