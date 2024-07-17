@@ -62,7 +62,11 @@ const TransactionComponent = () => {
               //     </div>
               //   </div>
               // </article>
-              <article key={_id} className="transfer">
+              <article
+                key={_id}
+                className="transfer"
+                style={{ padding: '0.2rem 1rem', paddingTop: '0.8rem' }}
+              >
                 {/* <h4 className="date">{date1}</h4> */}
                 <div className="inner-transfer-cont">
                   <div className="details">
@@ -97,7 +101,11 @@ const TransactionComponent = () => {
                 item;
 
               return (
-                <article key={_id} className="transfer">
+                <article
+                  key={_id}
+                  className="transfer"
+                  style={{ padding: '0.2rem 1rem' }}
+                >
                   {/* <h4 className="date">{date1}</h4> */}
                   <div className="inner-transfer-cont">
                     <div className="details">

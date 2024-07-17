@@ -159,7 +159,7 @@ const Landing = () => {
           <article
             key={filterStatus[len]._id}
             className="transfer"
-            style={{ padding: '0.5rem 1rem' }}
+            style={{ padding: '0.2rem 1rem' }}
             onClick={() => removeAlert(filterStatus[len]._id)}
           >
             <div className="split">
