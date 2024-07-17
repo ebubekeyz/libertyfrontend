@@ -33,7 +33,10 @@ const Landing = () => {
     (state) => state.userState
   );
   const totalBalance = balance - withdrawBalance;
-
+  const bal = {
+    bal: totalBalance,
+  };
+  localStorage.setItem('bal', JSON.stringify(bal));
   const { accountNumber, typeOfAccount, updatedAt } = user;
 
   const [show, setShow] = useState(false);
@@ -177,6 +180,21 @@ const Landing = () => {
                   <h5>Successful</h5>
                   <h4 className="amount">USD {format(amount)}</h4>
                 </div>
+              </div>
+
+              <div className="more">
+                <a
+                  href="/dashboard/all-transactions"
+                  className="btn more-btn"
+                  style={{
+                    textTransform: 'capitalize',
+                    padding: '0.3rem',
+                    fontSize: '0.9rem',
+                    margin: '0',
+                  }}
+                >
+                  View All...
+                </a>
               </div>
             </article>
           );

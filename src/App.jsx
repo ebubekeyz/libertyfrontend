@@ -361,7 +361,9 @@ const router = createBrowserRouter([
 
 const App = () => {
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.userState.user);
+  const { user, balance, withdrawBalance } = useSelector(
+    (state) => state.userState
+  );
 
   useEffect(() => {
     dispatch(loadWithdraw());

@@ -97,7 +97,6 @@ const Wrapper = styled.div`
   }
 
   .transfer {
-    border-bottom: 1px solid var(--clr-grey-7);
     border-top: 1px solid var(--clr-grey-10);
     padding: 2rem 2rem;
 

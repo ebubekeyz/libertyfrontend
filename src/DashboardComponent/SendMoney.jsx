@@ -43,7 +43,7 @@ export const action =
 
     const balanceMain = JSON.parse(localStorage.getItem('bal'));
 
-    if (balance > 0) {
+    if (balance > data.amount) {
       try {
         const resp = await customFetch.post('/withdraw', data);
         // popup.classList.add('showPopup');
@@ -63,7 +63,6 @@ export const action =
           'Do MMMM YYYY'
         )}, ${moment(withdraw2.createdAt).format('h:mm a')}`;
 
-        console.log(balanceMain !== null);
         if (balanceMain !== null) {
           const ledgerBalance = Number(balanceMain.bal) - withdraw2.amount;
           console.log(ledgerBalance);
