@@ -39,7 +39,7 @@ const TransactionComponent = () => {
               Incoming
             </div>
           </div>
-          {realWithdraw.slice(0, 3).map((item) => {
+          {realWithdraw.slice(0, 2).map((item) => {
             const { createdAt, amount, accountName, date1, date2, _id } = item;
 
             return (
@@ -91,7 +91,7 @@ const TransactionComponent = () => {
             </div>
           </div>
           {Object.values(deposit)
-            .slice(0, 3)
+            .slice(0, 2)
             .map((item) => {
               const { createdAt, amount, accountName, date1, date2, _id } =
                 item;
@@ -135,6 +135,7 @@ const TransactionComponent = () => {
       {/* <Skills /> */}
       <Connect />
       <Timeline />
+
       {/* <Blog /> */}
     </Wrapper>
   );
