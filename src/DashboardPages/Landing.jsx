@@ -31,11 +31,6 @@ const Landing = () => {
     (state) => state.userState
   );
   const totalBalance = balance - withdrawBalance;
-  const bal = {
-    bal: totalBalance,
-  };
-
-  localStorage.setItem('bal', JSON.stringify(bal));
 
   const { accountNumber, typeOfAccount, updatedAt } = user;
 
@@ -64,6 +59,7 @@ const Landing = () => {
     (item) => item.status === 'processing'
   );
 
+  console.log(filterID, filterStatus);
   const [show2, setShow2] = useState(true);
 
   const removeAlert = async (id) => {
@@ -154,20 +150,16 @@ const Landing = () => {
       </div>
 
       {show2 &&
-        filterStatus.slice(0, 1).map((item) => {
+        filterStatus.map((item) => {
           const { createdAt, amount, accountName, date1, date2, _id } = item;
           return (
-            <article
-              key={_id}
-              className="transfer"
-              onClick={() => removeAlert(_id)}
-            >
+            <article key={_id} className="transfer">
               <div className="split">
-                {/* <h4 className="date">{date1}</h4> */}
-                {/* <FaTimes
+                <h4 className="date">{date1}</h4>
+                <FaTimes
                   onClick={() => removeAlert(_id)}
                   style={{ cursor: 'pointer' }}
-                /> */}
+                />
               </div>
               <div className="inner-transfer-cont">
                 <div className="details">
