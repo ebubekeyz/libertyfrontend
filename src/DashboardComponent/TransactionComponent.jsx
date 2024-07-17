@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import Wrapper from '../assets/DashboardWrapper/Transact';
 import { Link, useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
-import { Skills, Testimonies, Timeline } from '../components';
+import { Connect, Skills, Testimonies, Timeline } from '../components';
 import Footer from './Footer';
 import Blog from './Blog';
 import Services from './Services';
@@ -133,6 +133,7 @@ const TransactionComponent = () => {
       </div>
 
       {/* <Skills /> */}
+      <Connect />
       <Timeline />
       {/* <Blog /> */}
     </Wrapper>
