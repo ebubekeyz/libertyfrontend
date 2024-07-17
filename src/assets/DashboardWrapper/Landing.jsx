@@ -105,6 +105,7 @@ const Wrapper = styled.div`
     gap: 1rem;
     margin-bottom: 0rem;
     margin-top: 0rem;
+    cursor: pointer;
   }
 
   .transfer:hover {

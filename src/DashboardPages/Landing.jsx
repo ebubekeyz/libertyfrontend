@@ -65,6 +65,8 @@ const Landing = () => {
   );
 
   const [show2, setShow2] = useState(true);
+  const len = filterStatus.length - 1;
+  console.log(filterStatus[len].amount);
 
   const removeAlert = async (id) => {
     const resp = await customFetch.patch(
@@ -153,34 +155,39 @@ const Landing = () => {
         </article>
       </div>
 
-      {show2 &&
-        filterStatus.map((item) => {
-          const { createdAt, amount, accountName, date1, date2, _id } = item;
-          return (
-            <article key={_id} className="transfer">
-              <div className="split">
-                {/* <h4 className="date">{date1}</h4> */}
-                <FaTimes
-                  onClick={() => removeAlert(_id)}
-                  style={{ cursor: 'pointer' }}
-                />
+      {
+        show2 && (
+          <article
+            key={filterStatus[len]._id}
+            className="transfer"
+            onClick={() => removeAlert(filterStatus[len]._id)}
+          >
+            <div className="split">
+              {/* <h4 className="date">{filterStatus[len].date1}</h4> */}
+              <FaTimes
+                onClick={() => removeAlert(filterStatus[len]._id)}
+                style={{ cursor: 'pointer' }}
+              />
+            </div>
+            <div className="inner-transfer-cont">
+              <div className="details">
+                <h4 className="name">
+                  Transfer from {filterStatus[len].accountName}
+                </h4>
+                <p>{filterStatus[len].date2}</p>
               </div>
-              <div className="inner-transfer-cont">
-                <div className="details">
-                  <h4 className="name">Transfer from {accountName}</h4>
-                  <p>{date2}</p>
-                </div>
 
-                <div className="approve">
-                  <h5>Successful</h5>
-                  <h4 className="amount">USD {format(amount)}</h4>
-                </div>
+              <div className="approve">
+                <h5>Successful</h5>
+                <h4 className="amount">
+                  USD {format(filterStatus[len].amount)}
+                </h4>
               </div>
-            </article>
-          );
-        })}
+            </div>
+          </article>
+        )
 
-      {/* {realDeposit.length > 0 ? (
+        /* {realDeposit.length > 0 ? (
         <article className="transfer">
           <h4 className="date">{moment(createdAt).format('Do MMMM YYYY')}</h4>
           <div className="inner-transfer-cont">
@@ -202,7 +209,8 @@ const Landing = () => {
         <div style={{ textAlign: 'center' }}>
           <h4>You do not have any Deposit</h4>
         </div>
-      )} */}
+      )} */
+      }
     </Wrapper>
   );
 };
