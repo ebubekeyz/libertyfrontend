@@ -104,7 +104,7 @@ const TransactionComponent = () => {
                 <article
                   key={_id}
                   className="transfer"
-                  style={{ padding: '0.2rem 1rem' }}
+                  style={{ padding: '0.2rem 1rem', paddingTop: '0.8rem' }}
                 >
                   {/* <h4 className="date">{date1}</h4> */}
                   <div className="inner-transfer-cont">
