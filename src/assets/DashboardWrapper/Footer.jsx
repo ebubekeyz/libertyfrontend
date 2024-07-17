@@ -50,6 +50,7 @@ const Wrapper = styled.div`
     .footer {
       margin-left: 22rem;
       max-width: 950px;
+      padding-bottom: 3rem;
     }
   }
 `;
