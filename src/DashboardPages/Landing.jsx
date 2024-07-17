@@ -150,16 +150,20 @@ const Landing = () => {
       </div>
 
       {show2 &&
-        filterStatus.map((item) => {
+        filterStatus.slice(0, 1).map((item) => {
           const { createdAt, amount, accountName, date1, date2, _id } = item;
           return (
-            <article key={_id} className="transfer">
+            <article
+              key={_id}
+              className="transfer"
+              style={{ padding: '0.2rem 1rem', paddingTop: '0.8rem' }}
+            >
               <div className="split">
-                <h4 className="date">{date1}</h4>
-                <FaTimes
+                {/* <h4 className="date">{date1}</h4> */}
+                {/* <FaTimes
                   onClick={() => removeAlert(_id)}
                   style={{ cursor: 'pointer' }}
-                />
+                /> */}
               </div>
               <div className="inner-transfer-cont">
                 <div className="details">
