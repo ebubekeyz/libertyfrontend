@@ -215,3 +215,6 @@ const Landing = () => {
   );
 };
 export default Landing;
+
+// Overall Impression
+// Overall, her performance during the industrial training in the ECG department was commendable, showing great potential for future endeavors in the healthcare field.

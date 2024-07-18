@@ -169,8 +169,6 @@ export const loadDeposit = createAsyncThunk(
   }
 );
 
-
-
 const userSlice = createSlice({
   name: 'user',
   initialState,

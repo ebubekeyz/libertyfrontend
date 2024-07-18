@@ -15,7 +15,6 @@ const ErrorElement = () => {
           Reload <FiRefreshCw />
         </button>
       </div>
-      ;
     </Wrapper>
   );
 };
