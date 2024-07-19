@@ -75,26 +75,34 @@ const Deposit = () => {
           <div className="inner-transfer-cont">
             <div className="details">
               <h4 className="name">Account Name:</h4>
-              <h4>{copyText.name}</h4>
-              <FiCopy onClick={handleCopy1} style={{ cursor: 'pointer' }} />
+              <div className="divide">
+                <h4>{copyText.name}</h4>
+                <FiCopy onClick={handleCopy1} style={{ cursor: 'pointer' }} />
+              </div>
             </div>
 
             <div className="details">
               <h4 className="name">Account Number:</h4>
-              <h4>{copyText.number}</h4>
-              <FiCopy onClick={handleCopy2} style={{ cursor: 'pointer' }} />
+              <div className="divide">
+                <h4>{copyText.number}</h4>
+                <FiCopy onClick={handleCopy2} style={{ cursor: 'pointer' }} />
+              </div>
             </div>
 
             <div className="details">
               <h4 className="name">Bank Name:</h4>
-              <h4>{copyText.bank}</h4>
-              <FiCopy onClick={handleCopy4} style={{ cursor: 'pointer' }} />
+              <div className="divide">
+                <h4>{copyText.bank}</h4>
+                <FiCopy onClick={handleCopy4} style={{ cursor: 'pointer' }} />
+              </div>
             </div>
 
             <div className="details">
               <h4 className="name">Sort Code:</h4>
-              <h4>{copyText.sortCode}</h4>
-              <FiCopy onClick={handleCopy3} style={{ cursor: 'pointer' }} />
+              <div className="divide">
+                <h4>{copyText.sortCode}</h4>
+                <FiCopy onClick={handleCopy3} style={{ cursor: 'pointer' }} />
+              </div>
             </div>
           </div>
         </article>
