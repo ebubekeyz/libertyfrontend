@@ -22,7 +22,7 @@ const Deposit = () => {
     name: `${user.firstName}  ${user.lastName} `,
     number: user.accountNumber,
     sortCode: user.sortCode,
-    bank: 'Pledge Bank',
+    bank: 'Liberty Credit Union',
   });
 
   const handleCopy1 = () => {
