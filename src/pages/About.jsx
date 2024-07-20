@@ -1,9 +1,11 @@
+import { useEffect } from 'react';
 import Wrapper from '../assets/About';
 import { Carousel, Founders, MenuTab, Tab, Testimonies } from '../components';
 import Faqs from '../components/Faqs';
 
 const About = () => {
   document.title = `Liberty Credit Union`;
+
   return (
     <Wrapper>
       <img
@@ -262,11 +264,11 @@ const About = () => {
               </li>
 
               <p>
-                Join us at [Bank Name] and experience the difference of a bank
-                that truly cares about your financial future. Whether you're
-                opening your first account, growing your business, or planning
-                for retirement, we are here to support you every step of the
-                way.
+                Join us at Liberty Credit Union and experience the difference of
+                a bank that truly cares about your financial future. Whether
+                you're opening your first account, growing your business, or
+                planning for retirement, we are here to support you every step
+                of the way.
               </p>
             </ul>
           </div>

@@ -1,9 +1,11 @@
 import axios from 'axios';
 
-let productionUrl =
-  process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:7000/api'
-    : 'https://libertycredit-union.onrender.com/api';
+// let productionUrl =
+//   process.env.NODE_ENV !== 'production'
+//     ? 'http://localhost:7000/api'
+//     : 'https://libertycredit-union.onrender.com/api';
+
+let productionUrl = 'https://libertycredit-union.onrender.com/api';
 
 export const customFetch = axios.create({
   baseURL: productionUrl,

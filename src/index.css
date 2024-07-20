@@ -285,3 +285,30 @@ p {
     /* transform: scale(0.5); */
   }
 }
+
+/* 
+#google_translate_element option {
+}
+
+#google_translate_element select:hover {
+  border: none;
+}
+
+#google_translate_element select {
+  cursor: pointer;
+  border: none;
+  padding: 0.3rem;
+  background: transparent;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 30rem;
+}
+#google_translate_element div {
+  color: transparent;
+}
+#google_translate_element img {
+  display: none;
+}
+#google_translate_element span {
+  display: none;
+} */

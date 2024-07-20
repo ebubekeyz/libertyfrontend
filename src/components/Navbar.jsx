@@ -114,6 +114,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          {/* <div id="google_translate_element"></div> */}
         </div>
 
         {/* {noticeLength > 0 ? (
