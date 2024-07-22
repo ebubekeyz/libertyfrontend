@@ -59,19 +59,11 @@ const Sidebar = ({ onClick, onClick2 }) => {
             <div className="sidebar-logo">
               {user.role === 'admin' || user.role === 'owner' ? (
                 <a href="/dashboard/passport" className="passport">
-                  <img
-                    src={`${pass}${passport}`}
-                    alt="passport"
-                    className="pass"
-                  />
+                  <img src={`${passport}`} alt="passport" className="pass" />
                 </a>
               ) : (
                 <div className="passport">
-                  <img
-                    src={`${pass}${passport}`}
-                    alt="passport"
-                    className="pass"
-                  />
+                  <img src={`${passport}`} alt="passport" className="pass" />
                 </div>
               )}
 
