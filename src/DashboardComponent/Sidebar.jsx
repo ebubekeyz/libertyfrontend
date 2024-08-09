@@ -115,7 +115,7 @@ const Sidebar = ({ onClick, onClick2 }) => {
             {user.role === 'admin' || user.role === 'owner' ? (
               <li>
                 <FaMoneyBills className="phone" />
-                <a href="/dashboard/set-transfer-details">Transfer Info</a>
+                <a href="/dashboard/set-transfer-details">Set Transfer Info</a>
               </li>
             ) : (
               ''
