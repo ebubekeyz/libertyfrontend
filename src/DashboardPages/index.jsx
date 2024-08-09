@@ -25,3 +25,4 @@ export { default as ChangePassword } from './ChangePassword';
 export { default as Delete } from './Delete';
 export { default as Cards } from './Cards';
 export { default as ChangPhoto } from './ChangePhoto';
+export { default as UpdateTransferDetails } from './UpdateTransferDetails';

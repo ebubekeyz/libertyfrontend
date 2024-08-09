@@ -63,6 +63,22 @@ export const loadWithdraw = createAsyncThunk(
     }
   }
 );
+
+export const getAccount = createAsyncThunk(
+  'withdraw/loadWithdraw',
+  async (name, thunkAPI) => {
+    const user = thunkAPI.getState().userState.user;
+    try {
+      const resp = await customFetch.get(
+        `/account/allAccount?user=${user._id}`
+      );
+      // console.log(resp.data.account);
+      thunkAPI.dispatch(addAccount(resp.data.account));
+    } catch (error) {
+      return thunkAPI.rejectWithValue('Something went wrong');
+    }
+  }
+);
 export const loadNotification = createAsyncThunk(
   'notification/loadNotification',
   async (name, thunkAPI) => {
@@ -76,19 +92,19 @@ export const loadNotification = createAsyncThunk(
     }
   }
 );
-export const loadAccount = createAsyncThunk(
-  'account/loadAccount',
-  async (name, thunkAPI) => {
-    const user = thunkAPI.getState().userState.user;
-    try {
-      const resp = await customFetch.get(`/account/allAccount`);
-      // console.log(resp.data.withdraw);
-      thunkAPI.dispatch(addAccount(resp.data.account));
-    } catch (error) {
-      return thunkAPI.rejectWithValue('Something went wrong');
-    }
-  }
-);
+// export const loadAccount = createAsyncThunk(
+//   'account/loadAccount',
+//   async (name, thunkAPI) => {
+//     const user = thunkAPI.getState().userState.user;
+//     try {
+//       const resp = await customFetch.get(`/account/allAccount`);
+//       // console.log(resp.data.withdraw);
+//       thunkAPI.dispatch(addAccount(resp.data.account));
+//     } catch (error) {
+//       return thunkAPI.rejectWithValue('Something went wrong');
+//     }
+//   }
+// );
 
 export const loadAllUsers = createAsyncThunk(
   'allUsers/loadAllUsers',

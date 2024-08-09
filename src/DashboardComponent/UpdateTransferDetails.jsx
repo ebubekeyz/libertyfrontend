@@ -17,14 +17,27 @@ export const action =
 
     const id = Object.values(account)[0]._id;
 
+    data = {
+      ...data,
+      name: data.name || '',
+      bank: data.bank || '',
+      accountNumber: data.accountNumber || '',
+      pin: data.pin || '',
+      status: 'false',
+    };
+
     data = { ...data, status: 'false' };
     console.log(data);
     try {
-      const resp = await customFetch.post(`/account`, data, {
-        headers: {
-          Authorization: `Bearer ${user.token}`,
-        },
-      });
+      const resp = await customFetch.patch(
+        `/account/${data.user}/editUserAccount`,
+        data,
+        {
+          headers: {
+            Authorization: `Bearer ${user.token}`,
+          },
+        }
+      );
 
       alert.innerHTML = 'Transfer Details Successfully Set';
       alert.style.background = 'var(--clr-primary-8)';
@@ -52,7 +65,7 @@ export const action =
     }
   };
 
-const SetTransferDetails = () => {
+const UpdateTransferDetails = () => {
   const { user, allUsers } = useSelector((state) => state.userState);
   const select = () => {
     let x, i, j, l, ll, selElmnt, a, b, c;
@@ -151,9 +164,9 @@ then close all select boxes: */
   return (
     <Wrapper>
       <div className="form">
-        <h4>Set Transfer Details</h4>
+        <h4>Edit Transfer Details</h4>
         <div className="form-alert"></div>
-        <Form method="post">
+        <Form method="patch">
           <div className="custom-select">
             <select name="user" id="ms" className="">
               {Object.values(allUsers).map((item) => {
@@ -196,10 +209,10 @@ then close all select boxes: */
               <option value="Wells Fargo Bank">Wells Fargo Bank</option>
             </select>
           </div>
-          <SubmitBtn text="set" />
+          <SubmitBtn text="update" />
         </Form>
       </div>
     </Wrapper>
   );
 };
-export default SetTransferDetails;
+export default UpdateTransferDetails;

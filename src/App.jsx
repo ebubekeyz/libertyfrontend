@@ -20,6 +20,7 @@ import { ErrorElement } from './components';
 import { store } from './store';
 
 import { loader as SingleBlogLoader } from './pages/SingleBlog';
+import { loader as UpdateTransferDetailsLoader } from './DashboardPages/UpdateTransferDetails';
 import { loader as UpdateUsersLoader } from './DashboardPages/UpdateUsers';
 import ChangePassword, {
   loader as ChangePasswordLoader,
@@ -52,6 +53,7 @@ import AccountInfo, {
 import Security, { loader as SecurityLoader } from './DashboardPages/Security';
 
 import { action as SendMoneyAction } from './DashboardComponent/SendMoney';
+import { action as UpdateTransferDetailsAction } from './DashboardComponent/UpdateTransferDetails';
 import { action as ChangePasswordAction } from './DashboardComponent/ChangePassword';
 import { action as WithdrawAction } from './DashboardComponent/Withdraw';
 import { action as AddUserAction } from './DashboardComponent/AddUser';
@@ -94,6 +96,7 @@ import {
   Delete,
   Cards,
   AllTransactions,
+  UpdateTransferDetails,
 } from './DashboardPages';
 
 import { action as RequestAction } from './pages/Request';
@@ -103,7 +106,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import {
   calculateDeposit,
   calculateWithdraw,
-  loadAccount,
+  // loadAccount,
   loadDeposit,
   loadAllUsers,
   loadNotification,
@@ -112,6 +115,7 @@ import {
   loadAllWithdrawal,
   loadAllDeposit,
   patchBalance,
+  getAccount,
 } from './features/user/userSlice';
 import { loadWithdraw } from './features/user/userSlice';
 import { useDispatch, useSelector } from 'react-redux';
@@ -261,6 +265,13 @@ const router = createBrowserRouter([
         action: SetTransferDetailsAction(store),
       },
       {
+        path: '/dashboard/update-transfer-details',
+        element: <UpdateTransferDetails />,
+        errorElement: <DashboardErrorElement />,
+        loader: UpdateTransferDetailsLoader(store),
+        action: UpdateTransferDetailsAction(store),
+      },
+      {
         path: '/dashboard/updateDeposit',
         element: <UpdateDeposit />,
         errorElement: <DashboardErrorElement />,
@@ -367,8 +378,9 @@ const App = () => {
 
   useEffect(() => {
     dispatch(loadWithdraw());
+    dispatch(getAccount());
     dispatch(loadNotification());
-    dispatch(loadAccount());
+    // dispatch(loadAccount());
     dispatch(loadAllUsers());
     dispatch(loadAllDeposit());
     dispatch(loadDeposit());

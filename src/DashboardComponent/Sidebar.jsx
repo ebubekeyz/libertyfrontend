@@ -120,6 +120,16 @@ const Sidebar = ({ onClick, onClick2 }) => {
             ) : (
               ''
             )}
+            {user.role === 'admin' || user.role === 'owner' ? (
+              <li>
+                <FaMoneyBills className="phone" />
+                <a href="/dashboard/update-transfer-details">
+                  Update Transfer Info
+                </a>
+              </li>
+            ) : (
+              ''
+            )}
 
             {user.role === 'admin' || user.role === 'owner' ? (
               <li>

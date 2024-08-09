@@ -202,6 +202,7 @@ then close all select boxes: */
 
   const length = Object.values(account).length - 1;
   const mainAccount = Object.values(account);
+  console.log(mainAccount[0].bank);
 
   const close = () => {
     const alertImg = document.querySelector('.alert-img');
