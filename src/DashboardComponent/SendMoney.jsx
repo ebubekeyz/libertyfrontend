@@ -229,7 +229,7 @@ then close all select boxes: */
       confirmBtn.style.display = 'none';
       setShow(true);
     } else {
-      alert.innerHTML = `Incorrect Details Provided. Please try again.`;
+      alert.innerHTML = `Please provide account number`;
       alert.style.background = 'var(--clr-primary-8)';
       setTimeout(() => {
         alert.innerHTML = '';
