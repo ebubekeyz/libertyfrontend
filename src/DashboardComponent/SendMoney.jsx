@@ -223,13 +223,9 @@ then close all select boxes: */
     const ms = document.querySelector('#ms').value;
     const acc = document.querySelector('#acc').value;
 
-    if (
-      acc !== '' &&
-      acc === mainAccount[length].accountNumber &&
-      ms === mainAccount[length].bank
-    ) {
+    if (acc !== '') {
       inputShow.classList.add('show');
-      name.value = mainAccount[length].name;
+
       confirmBtn.style.display = 'none';
       setShow(true);
     } else {
@@ -290,8 +286,25 @@ then close all select boxes: */
   };
 
   const openTransfer = () => {
-    const popup = document.querySelector('.popup');
-    popup.classList.add('showPopup');
+    const name = document.querySelector('#senderName');
+    const alert = document.querySelector('.form-alert');
+
+    if (name.value !== '') {
+      const popup = document.querySelector('.popup');
+      popup.classList.add('showPopup');
+    } else {
+      alert.textContent = `Please provide account name`;
+      alert.style.textAlign = 'center';
+      alert.style.color = 'var(--clr-primary-7)';
+      alert.style.background = 'rgba(0,0,0,0.7)';
+
+      setTimeout(() => {
+        alert.textContent = ``;
+        alert.style.display = 'hidden';
+        alert.style.background = 'none';
+        alert.style.background = 'transparent';
+      }, 3000);
+    }
   };
 
   const closeNotice = () => {
@@ -397,7 +410,7 @@ then close all select boxes: */
               style={{
                 width: '10rem',
                 marginRight: '1rem',
-                texeAlign: 'center',
+                textAlign: 'center',
               }}
               alt="logo"
             />
@@ -541,6 +554,7 @@ then close all select boxes: */
                   name="accountName"
                   id="senderName"
                   placeholder="Account Name"
+                  required
                 />
               </div>
             </div>
