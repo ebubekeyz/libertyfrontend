@@ -118,7 +118,7 @@ const Landing = () => {
             {user.role === 'admin' || user.role === 'owner' ? (
               <Link to="/dashboard/withdraw" className="inner-icon">
                 <FaMoneyBill className="ico" />
-                <p>Send Money</p>
+                <p>Withdraw</p>
               </Link>
             ) : (
               <Link to="/dashboard/sendMoney" className="inner-icon">
