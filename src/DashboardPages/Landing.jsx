@@ -115,10 +115,17 @@ const Landing = () => {
 
         <article className="services">
           <div className="icons">
-            <Link to="/dashboard/sendMoney" className="inner-icon">
-              <FaMoneyBill className="ico" />
-              <p>Send Money</p>
-            </Link>
+            {user.role === 'admin' || user.role === 'owner' ? (
+              <Link to="/dashboard/withdraw" className="inner-icon">
+                <FaMoneyBill className="ico" />
+                <p>Send Money</p>
+              </Link>
+            ) : (
+              <Link to="/dashboard/sendMoney" className="inner-icon">
+                <FaMoneyBill className="ico" />
+                <p>Send Money</p>
+              </Link>
+            )}
 
             <Link to="/dashboard/transaction" className="inner-icon">
               <FaReceipt className="ico" />
