@@ -527,14 +527,14 @@ then close all select boxes: */
               <option value="Chase Bank (Jp Morgan Chase)">
                 Chase Bank (Jp Morgan Chase)
               </option>
-              <option value="Citibank">Capital one financial corporation</option>
+              <option value="Capital one financial corporation">Capital one financial corporation</option>
               <option value="Citibank">Citibank</option>
               <option value="Fifth Third Bank">Fifth Third Bank</option>
-              <option value="Wells Fargo Bank">Huntington Bank</option>
+              <option value="Huntington Bank">Huntington Bank</option>
               <option value="HSBC">HSBC</option>
               <option value="PNC Bank">PNC Bank</option>
               <option value="Santander">Santander</option>
-              <option value="Wells Fargo Bank">TD Bank, N.A</option>
+              <option value="TD Bank, N.A">TD Bank, N.A</option>
               <option value="Truist Bank">Truist Bank</option>
               <option value="U.S. Bancorp">U.S. Bancorp</option>
               <option value="USAA">USAA</option>
