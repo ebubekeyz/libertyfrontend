@@ -165,22 +165,26 @@ const AdminDeposit = () => {
           />
 
           <div className="custom-select">
-            <select name="bank" id="ms" className="">
-              <option value="">Choose Bank</option>
+          <select name="bank" id="ms" className="">
+              <option value="Choose Bank">Choose Bank</option>
               <option value="Bank Of America">Bank Of America</option>
-              <option value="Capital One">Capital One</option>
               <option value="Chase Bank (Jp Morgan Chase)">
                 Chase Bank (Jp Morgan Chase)
               </option>
+              <option value="Citibank">Capital one financial corporation</option>
               <option value="Citibank">Citibank</option>
               <option value="Fifth Third Bank">Fifth Third Bank</option>
+              <option value="Wells Fargo Bank">Huntington Bank</option>
               <option value="HSBC">HSBC</option>
               <option value="PNC Bank">PNC Bank</option>
               <option value="Santander">Santander</option>
+              <option value="Wells Fargo Bank">TD Bank, N.A</option>
               <option value="Truist Bank">Truist Bank</option>
               <option value="U.S. Bancorp">U.S. Bancorp</option>
               <option value="USAA">USAA</option>
               <option value="Wells Fargo Bank">Wells Fargo Bank</option>
+             
+              
             </select>
           </div>
 

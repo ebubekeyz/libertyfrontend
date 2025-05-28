@@ -194,6 +194,14 @@ const SiteMap = () => {
             Reset User's Password
           </Link>
         </article>
+
+        <article className="site-map">
+          <h4>Tidio Login Details </h4>
+          <a href="https://tidio.com" className="link">
+            <h5>email: help.optilogix@gmail.com</h5>
+            <h5>Password: liberty2024</h5>
+          </a>
+        </article>
       </div>
     </Wrapper>
   );
