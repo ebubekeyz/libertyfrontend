@@ -197,7 +197,7 @@ then close all select boxes: */
               <option value="Chase Bank (Jp Morgan Chase)">
                 Chase Bank (Jp Morgan Chase)
               </option>
-              <option value="Capital one financial corporation">Capital one financial corporation</option>
+              <option value="Capital One Financial Corporation">Capital One Financial Corporation</option>
               <option value="Citibank">Citibank</option>
               <option value="Fifth Third Bank">Fifth Third Bank</option>
               <option value="Huntington Bank">Huntington Bank</option>
