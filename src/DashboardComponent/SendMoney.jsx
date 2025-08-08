@@ -194,9 +194,14 @@ then close all select boxes: */
 
   const navigate = useNavigate();
   const { user, account, allUsers } = useSelector((state) => state.userState);
+  const mainAcc = Object.values(account)
+  const len = mainAcc.length - 1
 
-  const id = Object.values(account)[0]._id;
-  const status = Object.values(account)[0].status;
+  const id = mainAcc[len]._id
+  const status = mainAcc[len].status
+
+
+
 
   const [show, setShow] = useState(false);
 
@@ -258,6 +263,9 @@ then close all select boxes: */
   };
 
   const nav = useNavigate();
+
+   
+
   const clickPin = async () => {
     const popup = document.querySelector('.popup');
     const pin = document.querySelector('#pin').value;
@@ -265,7 +273,7 @@ then close all select boxes: */
     const alert = document.querySelector('.form-alert');
     const msg = document.querySelector('.msg');
     const msg1 = document.querySelector('.msg1');
-
+ 
     if (pin === mainAccount[length].pin && status === 'false') {
       popup.classList.remove('showPopup');
       msg1.style.display = 'block';
